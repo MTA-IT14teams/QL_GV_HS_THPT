@@ -55,10 +55,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 {
                     MessageBox.Show("Không đăng nhập được! Kiểm tra lại thông tin tài khoản!");
                 }
-                else
-                {
-                    MessageBox.Show("Không đăng nhập được! Kiểm tra lại thông tin tài khoản!");
-                }
+                
             }
             catch(Exception ex)
             {
