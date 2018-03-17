@@ -50,6 +50,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     this.Show();
                     MessageBox.Show("Hoàn thành công việc của mình trước 26/3/2018", "Deadline");
                 }
+                else
+                {
+                    MessageBox.Show("Không đăng nhập được! Kiểm tra lại thông tin tài khoản!");
+                }
             }
             catch(Exception ex)
             {
