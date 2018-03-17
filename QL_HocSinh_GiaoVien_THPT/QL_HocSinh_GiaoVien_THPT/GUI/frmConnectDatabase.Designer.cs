@@ -156,7 +156,7 @@
             this.txtTenMayChu.Name = "txtTenMayChu";
             this.txtTenMayChu.Size = new System.Drawing.Size(361, 22);
             this.txtTenMayChu.TabIndex = 15;
-            this.txtTenMayChu.Text = "DESKTOP-2R414VO\\SQLEXPRESS";
+            this.txtTenMayChu.Text = ".";
             // 
             // label1
             // 
