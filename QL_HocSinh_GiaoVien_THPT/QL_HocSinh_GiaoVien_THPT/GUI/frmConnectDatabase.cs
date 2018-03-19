@@ -79,19 +79,14 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 if (DTO.Connect.myconnect.State == ConnectionState.Open)
                 {
                     MessageBox.Show("Bạn đã kết nối thành công đến cơ sở dữ liệu " + txtTenCSDL.Text);
-                    //frmLogin login = new frmLogin();
-                   // login.Show();
-                   // this.Hide();
                     this.Close();
                     this.Dispose();
-                    
                 }
                 else
                 {
                     MessageBox.Show("Không kết nối được đến cơ sở dữ liệu!");
                     return;
                 }
-
             }
             catch(Exception ex)
             {
