@@ -16,5 +16,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             InitializeComponent();
         }
+
+       
     }
 }

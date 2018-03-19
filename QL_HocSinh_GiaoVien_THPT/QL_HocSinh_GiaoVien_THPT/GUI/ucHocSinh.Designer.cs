@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucHocSinh));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -55,8 +56,18 @@
             this.btnXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLamMoi = new System.Windows.Forms.ToolStripMenuItem();
             this.btnThoat = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.btnTimKiem = new System.Windows.Forms.ToolStripButton();
+            this.cboMalop = new System.Windows.Forms.ToolStripComboBox();
+            this.cboDantoc = new System.Windows.Forms.ToolStripComboBox();
+            this.cboTongiao = new System.Windows.Forms.ToolStripComboBox();
+            this.txtMa = new System.Windows.Forms.ToolStripTextBox();
+            this.txtHo = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.groupBox1.SuspendLayout();
             this.mnsIDU.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -261,7 +272,7 @@
             this.btnThoat});
             this.mnsIDU.Location = new System.Drawing.Point(3, 234);
             this.mnsIDU.Name = "mnsIDU";
-            this.mnsIDU.Size = new System.Drawing.Size(500, 24);
+            this.mnsIDU.Size = new System.Drawing.Size(408, 24);
             this.mnsIDU.TabIndex = 1;
             this.mnsIDU.Text = "menuStrip1";
             // 
@@ -301,10 +312,81 @@
             this.btnThoat.Size = new System.Drawing.Size(50, 20);
             this.btnThoat.Text = "Thoát";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1025, 25);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnTimKiem,
+            this.txtMa,
+            this.txtHo,
+            this.toolStripTextBox1,
+            this.cboMalop,
+            this.cboDantoc,
+            this.cboTongiao});
+            this.toolStrip2.Location = new System.Drawing.Point(343, 198);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(743, 27);
+            this.toolStrip2.TabIndex = 3;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(23, 24);
+            this.btnTimKiem.Text = "Tìm kiếm";
+            // 
+            // cboMalop
+            // 
+            this.cboMalop.Name = "cboMalop";
+            this.cboMalop.Size = new System.Drawing.Size(121, 25);
+            this.cboMalop.Text = "Mã Lớp";
+            // 
+            // cboDantoc
+            // 
+            this.cboDantoc.Name = "cboDantoc";
+            this.cboDantoc.Size = new System.Drawing.Size(121, 25);
+            this.cboDantoc.Text = "--Dân Tộc";
+            // 
+            // cboTongiao
+            // 
+            this.cboTongiao.Name = "cboTongiao";
+            this.cboTongiao.Size = new System.Drawing.Size(121, 25);
+            this.cboTongiao.Text = "Tôn Giáo";
+            // 
+            // txtMa
+            // 
+            this.txtMa.Name = "txtMa";
+            this.txtMa.Size = new System.Drawing.Size(100, 25);
+            this.txtMa.Text = "--Mã HS";
+            // 
+            // txtHo
+            // 
+            this.txtHo.Name = "txtHo";
+            this.txtHo.Size = new System.Drawing.Size(100, 25);
+            this.txtHo.Text = "--Họ HS";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            // 
             // ucHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.toolStrip2);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mnsIDU);
             this.Name = "ucHocSinh";
@@ -313,6 +395,8 @@
             this.groupBox1.PerformLayout();
             this.mnsIDU.ResumeLayout(false);
             this.mnsIDU.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,6 +431,15 @@
         private System.Windows.Forms.ToolStripMenuItem btnXoa;
         private System.Windows.Forms.ToolStripMenuItem btnLamMoi;
         private System.Windows.Forms.ToolStripMenuItem btnThoat;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton btnTimKiem;
+        private System.Windows.Forms.ToolStripComboBox cboMalop;
+        private System.Windows.Forms.ToolStripComboBox cboDantoc;
+        private System.Windows.Forms.ToolStripComboBox cboTongiao;
+        private System.Windows.Forms.ToolStripTextBox txtMa;
+        private System.Windows.Forms.ToolStripTextBox txtHo;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
      //   private System.Windows.Forms.ToolStripContainer toolStripContainer1;
 
     }
