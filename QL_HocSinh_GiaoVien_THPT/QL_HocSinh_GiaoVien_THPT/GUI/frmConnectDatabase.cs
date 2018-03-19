@@ -68,6 +68,8 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 }
                 else
                 {
+                    DTO.ConnectionString.UserName = txtTenDangNhap.Text;
+                    DTO.ConnectionString.Password = txtMK.Text;
                     DTO.ConnectionString.WinAuthentication = false;
                     DTO.ConnectionString.TaoChuoiKetNoi();
                 }
