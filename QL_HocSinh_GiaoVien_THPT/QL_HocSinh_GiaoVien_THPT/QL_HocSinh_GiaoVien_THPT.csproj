@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DTO\Connect.cs" />
     <Compile Include="DTO\ConnectionString.cs" />
+    <Compile Include="DTO\Connect.cs" />
     <Compile Include="GUI\frmConnectDatabase.cs">
       <SubType>Form</SubType>
     </Compile>

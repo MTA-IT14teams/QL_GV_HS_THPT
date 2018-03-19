@@ -72,10 +72,12 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     DTO.ConnectionString.TaoChuoiKetNoi();
                 }
 
-                SqlConnection myConnect = new SqlConnection(DTO.ConnectionString.stringConnect);
-                myConnect.Open();
+                //SqlConnection myConnect = new SqlConnection(DTO.ConnectionString.stringConnect);
+                //myConnect.Open();
+                DTO.Connect.myconnect = new SqlConnection(DTO.ConnectionString.stringConnect);
+                DTO.Connect.openConnect();
 
-                if (myConnect.State == ConnectionState.Open)
+                if (DTO.Connect.myconnect.State == ConnectionState.Open)
                 {
                     MessageBox.Show("Bạn đã kết nối thành công đến cơ sở dữ liệu " + txtTenCSDL.Text);
                     //frmLogin login = new frmLogin();
