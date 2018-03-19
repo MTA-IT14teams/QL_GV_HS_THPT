@@ -8,15 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace QL_HocSinh_GiaoVien_THPT.GUI
-{
+{   
+     
     public partial class ucGiaoVien : UserControl
     {
         bool themmoi = false;
         int dong = -1;
         DataTable dtMon = new DataTable();
-
 
         public ucGiaoVien()
         {
@@ -42,7 +43,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             txtLuong.ReadOnly = true;
         }
 
-        public void Ketnoi()
+        public void LoadGV()
         {
             SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
             conn.Open();
@@ -58,7 +59,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         private void ucGiaoVien_Load(object sender, EventArgs e)
         {
             Khoa_btn();
-            Ketnoi();
+            LoadGV();
         }
         public void SetNull()
         {
@@ -72,6 +73,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+
             themmoi = true;
             #region
             ////Lấy mã môn học
@@ -91,6 +93,13 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             //hienthi ds Ma Mon
             SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
             conn.Open();
+
+            //DataTable table = new DataTable("tblMonhoc");
+            //// new 1 DataView  
+            //DataView dataView = new DataView(table);
+            //// chỉ lấy những moon hoc  
+            //dataView.RowFilter = "TenMon";
+            
             string strSQL = "select * from tblMonhoc";
             DataTable dt = new DataTable();
             SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
@@ -150,7 +159,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
                         cmd.ExecuteNonQuery();
                         //Hiển thị lại thông tin sau khi thêm và thông báo
-                        Ketnoi();                        
+                        LoadGV();                        
                         MessageBox.Show("Thêm mới thành công");
 
                         //
@@ -221,7 +230,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 btnXoa.Enabled = true;
                 SetNull();
                 Khoa_btn();/*không cho thao tác*/
-                Ketnoi();
+                LoadGV();
             }
         }
 
@@ -296,7 +305,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Xoá thành công");
-                Ketnoi();
+                LoadGV();
             }
         }
 
@@ -310,7 +319,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 btnSua.Enabled = true;
                 SetNull();
                 Khoa_btn();/*không cho thao tác*/
-                Ketnoi();
+                LoadGV();
             }
         }
 
