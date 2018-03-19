@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data.SqlClient;
 namespace QL_HocSinh_GiaoVien_THPT.DTO
 {
     public static class ConnectionString
@@ -13,7 +13,7 @@ namespace QL_HocSinh_GiaoVien_THPT.DTO
         public static string UserName;
         public static string Password;
         public static bool WinAuthentication;
-
+        public static SqlConnection myconect;
         public static string stringConnect="";
 
         public static void TaoChuoiKetNoi()
@@ -32,6 +32,16 @@ namespace QL_HocSinh_GiaoVien_THPT.DTO
 
             }
             stringConnect = Temp;
+        }
+        public static void MoKetNoi()
+        {
+            SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+            conn.Open();
+        }
+
+        public static void DongKetNoi()
+        {
+
         }
 
     }
