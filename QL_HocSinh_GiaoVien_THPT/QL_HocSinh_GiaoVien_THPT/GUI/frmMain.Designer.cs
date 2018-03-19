@@ -57,6 +57,10 @@
             this.splitContainer1.Panel1.Controls.Add(this.btnThoat);
             this.splitContainer1.Panel1.Controls.Add(this.btnGiaoVien);
             this.splitContainer1.Panel1.Controls.Add(this.btnHome);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(1119, 576);
             this.splitContainer1.SplitterDistance = 98;
             this.splitContainer1.TabIndex = 0;
