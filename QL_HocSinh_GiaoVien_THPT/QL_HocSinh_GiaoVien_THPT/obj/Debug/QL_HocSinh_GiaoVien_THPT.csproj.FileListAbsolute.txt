@@ -32,7 +32,6 @@ C:\Users\vuman\Desktop\QLHSGV_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_
 C:\Users\vuman\Desktop\QLHSGV_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
 C:\Users\vuman\Desktop\QLHSGV_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
@@ -51,7 +50,6 @@ C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVie
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
 =======
-=======
 E:\Nam_3_Kỳ2\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 E:\Nam_3_Kỳ2\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\Nam_3_Kỳ2\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
@@ -69,7 +67,6 @@ E:\Nam_3_Kỳ2\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\o
 E:\Nam_3_Kỳ2\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
 E:\Nam_3_Kỳ2\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
 E:\Nam_3_Kỳ2\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
-=======
 >>>>>>> 8011a03f74cd22a5669236fe6f06f1fd193c26ba
 >>>>>>> 5df7e35a85a6b70ed934b99b5d7bba22eb22a93f
 C:\Users\vuman\Desktop\GITHUB\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
@@ -89,10 +86,15 @@ C:\Users\vuman\Desktop\GITHUB\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_
 C:\Users\vuman\Desktop\GITHUB\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
 C:\Users\vuman\Desktop\GITHUB\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
 C:\Users\vuman\Desktop\GITHUB\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
-<<<<<<< HEAD
->>>>>>> 8011a03f74cd22a5669236fe6f06f1fd193c26ba
-=======
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
->>>>>>> 5df7e35a85a6b70ed934b99b5d7bba22eb22a93f
+<<<<<<< HEAD
+D:\GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
+D:\GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
+D:\GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+=======
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+>>>>>>> cce0cd0eeea22b351119b576022a17ddde2a26b5
