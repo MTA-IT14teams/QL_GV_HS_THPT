@@ -39,6 +39,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucGiaoVien));
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.dgvGiaoVien = new System.Windows.Forms.DataGridView();
             this.MaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,6 +81,12 @@
             this.toolStrip1.SuspendLayout();
             this.mnsIDU.SuspendLayout();
             this.grbThongTinGiaoVien.SuspendLayout();
+=======
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+>>>>>>> 347b8509a5968341c4782918689a99cdf18d730f
             this.SuspendLayout();
             // 
             // label1
@@ -487,10 +494,27 @@
             this.lblMaHS.TabIndex = 0;
             this.lblMaHS.Text = "Mã GV*";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(469, 257);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(621, 181);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.TabIndex = 2;
+            // 
             // ucGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.Controls.Add(this.dgvGiaoVien);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.mnsIDU);
@@ -506,6 +530,15 @@
             this.mnsIDU.PerformLayout();
             this.grbThongTinGiaoVien.ResumeLayout(false);
             this.grbThongTinGiaoVien.PerformLayout();
+=======
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Name = "ucGiaoVien";
+            this.Size = new System.Drawing.Size(1025, 513);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+>>>>>>> 347b8509a5968341c4782918689a99cdf18d730f
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -514,6 +547,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridView dgvGiaoVien;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripTextBox txtTimMaGV;
@@ -551,5 +585,9 @@
         private System.Windows.Forms.TextBox txtLuong;
         private System.Windows.Forms.RadioButton rdbNu;
         private System.Windows.Forms.RadioButton rdbNam;
+=======
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+>>>>>>> 347b8509a5968341c4782918689a99cdf18d730f
     }
 }
