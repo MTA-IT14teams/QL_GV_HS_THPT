@@ -21,6 +21,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         
         private void KiemTra()
         {
+            //MessageBox.Show("test");
             try
             {
                 if (txtUsername.Text.Trim() == "")
@@ -48,12 +49,13 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     this.Hide();
                     m.ShowDialog();
                     this.Show();
-                    MessageBox.Show("Hoàn thành công việc của mình trước 26/3/2018", "Deadline");
+                    //MessageBox.Show("Hoàn thành công việc của mình trước 26/3/2018", "Deadline");
                 }
                 else
                 {
                     MessageBox.Show("Không đăng nhập được! Kiểm tra lại thông tin tài khoản!");
                 }
+
             }
             catch(Exception ex)
             {
@@ -63,26 +65,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
         
 
-        public void LoadAppConfig()
-        {
-            if (cbLuuTK.Checked == true)
-            {
-                Configuration _config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                _config.AppSettings.Settings["Username"].Value = txtUsername.Text; 
-                _config.AppSettings.Settings["Save"].Value = "true";
-                
-                _config.Save(ConfigurationSaveMode.Modified);
-                ConfigurationManager.RefreshSection("appSettings");
-            }
-            else
-            {
-                Configuration _config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                _config.AppSettings.Settings["Save"].Value = "false";
-
-                _config.Save(ConfigurationSaveMode.Modified);
-                ConfigurationManager.RefreshSection("appSettings");
-            }
-        }
+        
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
@@ -110,7 +93,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
             KiemTra();
-            LoadAppConfig();  
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
