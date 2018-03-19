@@ -307,7 +307,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 btnSua.Enabled = true;
                 SetNull();
                 Khoa_btn();/*không cho thao tác*/
-                dgvGiaoVien.DataSource = gv.getAllgiaovien();
+                Ketnoi();
             }
         }
     }
