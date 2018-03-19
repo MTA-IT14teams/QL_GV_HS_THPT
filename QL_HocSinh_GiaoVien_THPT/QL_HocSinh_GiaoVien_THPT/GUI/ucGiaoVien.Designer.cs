@@ -328,7 +328,7 @@
             this.grbThongTinGiaoVien.TabIndex = 5;
             this.grbThongTinGiaoVien.TabStop = false;
             this.grbThongTinGiaoVien.Text = "Thông tin giáo viên";
-            this.grbThongTinGiaoVien.Enter += new System.EventHandler(this.grbThongTinGiaoVien_Enter);
+//            this.grbThongTinGiaoVien.Enter += new System.EventHandler(this.grbThongTinGiaoVien_Enter);
             // 
             // rdbNu
             // 
