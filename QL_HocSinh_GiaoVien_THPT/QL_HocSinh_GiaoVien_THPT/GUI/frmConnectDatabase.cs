@@ -98,6 +98,11 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             }
         }
 
+        private void txtTenMayChu_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
 
        

@@ -31,3 +31,20 @@ C:\Users\vuman\Desktop\QLHSGV_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_
 C:\Users\vuman\Desktop\QLHSGV_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
 C:\Users\vuman\Desktop\QLHSGV_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
 C:\Users\vuman\Desktop\QLHSGV_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmConnectDatabase.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmLogin.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmMain.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiangDay.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiaoVien.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucHocSinh.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucTaiKhoan.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucThoiKhoaBieu.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
