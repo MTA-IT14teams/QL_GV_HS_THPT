@@ -16,6 +16,8 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         bool themmoi = false;
         int dong = -1;
         DataTable dtMon = new DataTable();
+
+
         public ucGiaoVien()
         {
             InitializeComponent();
