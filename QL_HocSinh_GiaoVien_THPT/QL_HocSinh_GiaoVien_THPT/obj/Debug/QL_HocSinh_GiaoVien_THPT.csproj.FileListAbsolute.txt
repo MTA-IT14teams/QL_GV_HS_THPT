@@ -96,3 +96,18 @@ E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVie
 E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
 >>>>>>> cce0cd0eeea22b351119b576022a17ddde2a26b5
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csprojResolveAssemblyReference.cache
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmConnectDatabase.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmLogin.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmMain.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiangDay.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiaoVien.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucHocSinh.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucTaiKhoan.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucThoiKhoaBieu.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe
+E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+>>>>>>> QuanLyGiangDay
