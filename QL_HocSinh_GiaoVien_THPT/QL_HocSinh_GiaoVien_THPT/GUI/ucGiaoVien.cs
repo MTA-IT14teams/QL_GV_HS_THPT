@@ -15,6 +15,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
     {
         bool themmoi = false;
         int dong = -1;
+        DataTable 
         public ucGiaoVien()
         {
             InitializeComponent();
@@ -309,6 +310,11 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 Khoa_btn();/*không cho thao tác*/
                 Ketnoi();
             }
+        }
+
+        private void grbThongTinGiaoVien_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
