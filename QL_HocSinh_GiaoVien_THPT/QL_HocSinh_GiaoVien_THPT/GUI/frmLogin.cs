@@ -37,7 +37,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     return;
                 }
 
-                SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+                SqlConnection conn = new SqlConnection(DTO.ConnectString.stringConnect);
                 conn.Open();
                 string sql = "select *from tblUser where Username = '" + txtUsername.Text.Trim() + "' and  Password = '" + txtPassword.Text.Trim() + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);

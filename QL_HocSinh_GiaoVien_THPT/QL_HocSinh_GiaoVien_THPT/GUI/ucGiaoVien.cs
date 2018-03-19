@@ -41,7 +41,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
         public void Ketnoi()
         {
-            SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+            SqlConnection conn = new SqlConnection(DTO.ConnectString.stringConnect);
             conn.Open();
             string sql = "Select *from tblGiaovien";
             SqlCommand comm = new SqlCommand(sql, conn);
@@ -86,7 +86,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             btnXoa.Enabled = false;
             btnLuu.Enabled = true;
             //hienthi ds Ma Mon
-            SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+            SqlConnection conn = new SqlConnection(DTO.ConnectString.stringConnect);
             conn.Open();
             string strSQL = "select * from tblMonhoc";
             DataTable dt = new DataTable();
@@ -120,7 +120,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     try
                       {
                         
-                        SqlConnection connT = new SqlConnection(DTO.ConnectionString.stringConnect);
+                        SqlConnection connT = new SqlConnection(DTO.ConnectString.stringConnect);
                         connT.Open();
                         SqlCommand cmd = new SqlCommand("themGV1", connT);
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -171,7 +171,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 {
                     try
                     {
-                        SqlConnection connX = new SqlConnection(DTO.ConnectionString.stringConnect);
+                        SqlConnection connX = new SqlConnection(DTO.ConnectString.stringConnect);
                         connX.Open();
                         //MessageBox.Show("ok");
                         
@@ -237,7 +237,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[5].Value.ToString();
                 txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
 
-                SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+                SqlConnection conn = new SqlConnection(DTO.ConnectString.stringConnect);
                 conn.Open();               
                 string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString()+ "'"; 
                 DataTable dt =new DataTable();
@@ -264,7 +264,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             btnXoa.Enabled = false;
             btnLuu.Enabled = true;
             //hienthi ds Ma Mon
-            SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+            SqlConnection conn = new SqlConnection(DTO.ConnectString.stringConnect);
             conn.Open();
             string strSQL = "select * from tblMonhoc";
             DataTable dt = new DataTable();
@@ -283,7 +283,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
             if (traloi == DialogResult.OK)
             {
-                SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+                SqlConnection conn = new SqlConnection(DTO.ConnectString.stringConnect);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("xoaGV1", conn);
                 cmd.CommandType = CommandType.StoredProcedure;

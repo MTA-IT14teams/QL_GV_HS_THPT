@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QL_HocSinh_GiaoVien_THPT.DTO
 {
-    public static class ConnectionString
+    public static class ConnectString
     {
         public static string ServerName;
         public static string DatabaseName;

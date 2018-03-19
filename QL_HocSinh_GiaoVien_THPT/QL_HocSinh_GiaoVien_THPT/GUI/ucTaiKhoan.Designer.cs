@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucTaiKhoan));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtuser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ucThem = new System.Windows.Forms.Button();
-            this.ucSua = new System.Windows.Forms.Button();
-            this.ucXoa = new System.Windows.Forms.Button();
-            this.uc = new System.Windows.Forms.Button();
-            this.TimKiem = new System.Windows.Forms.TextBox();
-            this.ucTimKiem = new System.Windows.Forms.Button();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.btThem = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btRefresh = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.btTimKiem = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,15 +74,14 @@
             this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtuser
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtuser.Location = new System.Drawing.Point(181, 153);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(100, 20);
+            this.txtuser.TabIndex = 2;
+            this.txtuser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -95,98 +94,97 @@
             this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Password";
-            this.label3.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // txtpassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(181, 204);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtpassword.Location = new System.Drawing.Point(181, 204);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(100, 20);
+            this.txtpassword.TabIndex = 2;
+            this.txtpassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // ucThem
+            // btThem
             // 
-            this.ucThem.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucThem.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ucThem.Image = ((System.Drawing.Image)(resources.GetObject("ucThem.Image")));
-            this.ucThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucThem.Location = new System.Drawing.Point(387, 101);
-            this.ucThem.Name = "ucThem";
-            this.ucThem.Size = new System.Drawing.Size(75, 36);
-            this.ucThem.TabIndex = 3;
-            this.ucThem.Text = "Thêm";
-            this.ucThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ucThem.UseVisualStyleBackColor = false;
-            this.ucThem.Click += new System.EventHandler(this.button1_Click);
+            this.btThem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btThem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btThem.Image = ((System.Drawing.Image)(resources.GetObject("btThem.Image")));
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.Location = new System.Drawing.Point(387, 101);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(75, 36);
+            this.btThem.TabIndex = 3;
+            this.btThem.Text = "Thêm";
+            this.btThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btThem.UseVisualStyleBackColor = false;
+            this.btThem.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ucSua
+            // btSua
             // 
-            this.ucSua.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucSua.ForeColor = System.Drawing.Color.Black;
-            this.ucSua.Image = ((System.Drawing.Image)(resources.GetObject("ucSua.Image")));
-            this.ucSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucSua.Location = new System.Drawing.Point(468, 101);
-            this.ucSua.Name = "ucSua";
-            this.ucSua.Size = new System.Drawing.Size(75, 36);
-            this.ucSua.TabIndex = 3;
-            this.ucSua.Text = "Sửa";
-            this.ucSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ucSua.UseVisualStyleBackColor = false;
-            this.ucSua.Click += new System.EventHandler(this.button1_Click);
+            this.btSua.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btSua.ForeColor = System.Drawing.Color.Black;
+            this.btSua.Image = ((System.Drawing.Image)(resources.GetObject("btSua.Image")));
+            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSua.Location = new System.Drawing.Point(468, 101);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(75, 36);
+            this.btSua.TabIndex = 3;
+            this.btSua.Text = "Sửa";
+            this.btSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSua.UseVisualStyleBackColor = false;
+            this.btSua.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ucXoa
+            // btXoa
             // 
-            this.ucXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucXoa.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ucXoa.Image = ((System.Drawing.Image)(resources.GetObject("ucXoa.Image")));
-            this.ucXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucXoa.Location = new System.Drawing.Point(549, 101);
-            this.ucXoa.Name = "ucXoa";
-            this.ucXoa.Size = new System.Drawing.Size(75, 36);
-            this.ucXoa.TabIndex = 3;
-            this.ucXoa.Text = "Xóa";
-            this.ucXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ucXoa.UseVisualStyleBackColor = false;
-            this.ucXoa.Click += new System.EventHandler(this.button1_Click);
+            this.btXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btXoa.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btXoa.Image = ((System.Drawing.Image)(resources.GetObject("btXoa.Image")));
+            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXoa.Location = new System.Drawing.Point(549, 101);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(75, 36);
+            this.btXoa.TabIndex = 3;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btXoa.UseVisualStyleBackColor = false;
+            this.btXoa.Click += new System.EventHandler(this.button1_Click);
             // 
-            // uc
+            // btRefresh
             // 
-            this.uc.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.uc.Image = ((System.Drawing.Image)(resources.GetObject("uc.Image")));
-            this.uc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uc.Location = new System.Drawing.Point(630, 101);
-            this.uc.Name = "uc";
-            this.uc.Size = new System.Drawing.Size(75, 36);
-            this.uc.TabIndex = 3;
-            this.uc.Text = "Refresh";
-            this.uc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.uc.UseVisualStyleBackColor = false;
-            this.uc.Click += new System.EventHandler(this.button1_Click);
+            this.btRefresh.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btRefresh.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btRefresh.Image")));
+            this.btRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btRefresh.Location = new System.Drawing.Point(630, 101);
+            this.btRefresh.Name = "btRefresh";
+            this.btRefresh.Size = new System.Drawing.Size(75, 36);
+            this.btRefresh.TabIndex = 3;
+            this.btRefresh.Text = "Refresh";
+            this.btRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btRefresh.UseVisualStyleBackColor = false;
+            this.btRefresh.Click += new System.EventHandler(this.button1_Click);
             // 
-            // TimKiem
+            // txtTimKiem
             // 
-            this.TimKiem.Location = new System.Drawing.Point(711, 110);
-            this.TimKiem.Name = "TimKiem";
-            this.TimKiem.Size = new System.Drawing.Size(100, 20);
-            this.TimKiem.TabIndex = 5;
-            this.TimKiem.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtTimKiem.Location = new System.Drawing.Point(711, 110);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(100, 20);
+            this.txtTimKiem.TabIndex = 5;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // ucTimKiem
+            // btTimKiem
             // 
-            this.ucTimKiem.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucTimKiem.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ucTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("ucTimKiem.Image")));
-            this.ucTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucTimKiem.Location = new System.Drawing.Point(817, 101);
-            this.ucTimKiem.Name = "ucTimKiem";
-            this.ucTimKiem.Size = new System.Drawing.Size(75, 36);
-            this.ucTimKiem.TabIndex = 3;
-            this.ucTimKiem.Text = "Tìm Kiếm";
-            this.ucTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ucTimKiem.UseVisualStyleBackColor = false;
-            this.ucTimKiem.Click += new System.EventHandler(this.button1_Click);
+            this.btTimKiem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btTimKiem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btTimKiem.Image")));
+            this.btTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btTimKiem.Location = new System.Drawing.Point(817, 101);
+            this.btTimKiem.Name = "btTimKiem";
+            this.btTimKiem.Size = new System.Drawing.Size(75, 36);
+            this.btTimKiem.TabIndex = 3;
+            this.btTimKiem.Text = "Tìm Kiếm";
+            this.btTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btTimKiem.UseVisualStyleBackColor = false;
+            this.btTimKiem.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView
             // 
@@ -210,12 +208,14 @@
             // Username
             // 
             this.Username.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Username.DataPropertyName = "Username";
             this.Username.HeaderText = "Username";
             this.Username.Name = "Username";
             // 
             // Password
             // 
             this.Password.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Password.DataPropertyName = "Password";
             this.Password.HeaderText = "Password";
             this.Password.Name = "Password";
             // 
@@ -229,15 +229,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.TimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.dataGridView);
-            this.Controls.Add(this.uc);
-            this.Controls.Add(this.ucSua);
-            this.Controls.Add(this.ucXoa);
-            this.Controls.Add(this.ucTimKiem);
-            this.Controls.Add(this.ucThem);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btRefresh);
+            this.Controls.Add(this.btSua);
+            this.Controls.Add(this.btXoa);
+            this.Controls.Add(this.btTimKiem);
+            this.Controls.Add(this.btThem);
+            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.txtuser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -256,19 +256,19 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button ucThem;
-        private System.Windows.Forms.Button ucSua;
-        private System.Windows.Forms.Button ucXoa;
-        private System.Windows.Forms.Button uc;
-        private System.Windows.Forms.TextBox TimKiem;
-        private System.Windows.Forms.Button ucTimKiem;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.Button btThem;
+        private System.Windows.Forms.Button btSua;
+        private System.Windows.Forms.Button btXoa;
+        private System.Windows.Forms.Button btRefresh;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Button btTimKiem;
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Diagnostics.EventLog eventLog1;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn Password;
-        private System.Diagnostics.EventLog eventLog1;
     }
 }
