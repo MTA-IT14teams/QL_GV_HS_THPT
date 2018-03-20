@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucHocSinh));
+            System.Windows.Forms.ToolStripLabel toolStripLabel1;
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboTG = new System.Windows.Forms.ComboBox();
+            this.cboDT = new System.Windows.Forms.ComboBox();
+            this.cboMaLp = new System.Windows.Forms.ComboBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.rdbNu = new System.Windows.Forms.RadioButton();
+            this.rdbNam = new System.Windows.Forms.RadioButton();
+            this.txtTenHS = new System.Windows.Forms.TextBox();
+            this.txtHoHS = new System.Windows.Forms.TextBox();
+            this.txtDC = new System.Windows.Forms.TextBox();
+            this.txtMaHS = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,30 +59,40 @@
             this.btnThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.btnTimKiem = new System.Windows.Forms.ToolStripButton();
+            this.txtMa = new System.Windows.Forms.ToolStripTextBox();
+            this.txtHo = new System.Windows.Forms.ToolStripTextBox();
+            this.txtTen = new System.Windows.Forms.ToolStripTextBox();
             this.cboMalop = new System.Windows.Forms.ToolStripComboBox();
             this.cboDantoc = new System.Windows.Forms.ToolStripComboBox();
             this.cboTongiao = new System.Windows.Forms.ToolStripComboBox();
-            this.txtMa = new System.Windows.Forms.ToolStripTextBox();
-            this.txtHo = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaHS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenHS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DanToc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TonGiao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.groupBox1.SuspendLayout();
             this.mnsIDU.SuspendLayout();
             this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cboTG);
+            this.groupBox1.Controls.Add(this.cboDT);
+            this.groupBox1.Controls.Add(this.cboMaLp);
+            this.groupBox1.Controls.Add(this.dtpNgaySinh);
+            this.groupBox1.Controls.Add(this.rdbNu);
+            this.groupBox1.Controls.Add(this.rdbNam);
+            this.groupBox1.Controls.Add(this.txtTenHS);
+            this.groupBox1.Controls.Add(this.txtHoHS);
+            this.groupBox1.Controls.Add(this.txtDC);
+            this.groupBox1.Controls.Add(this.txtMaHS);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -91,93 +102,96 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 19);
+            this.groupBox1.Location = new System.Drawing.Point(3, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(961, 156);
+            this.groupBox1.Size = new System.Drawing.Size(961, 166);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin học sinh";
             // 
-            // comboBox3
+            // cboTG
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(538, 78);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(151, 21);
-            this.comboBox3.TabIndex = 4;
+            this.cboTG.FormattingEnabled = true;
+            this.cboTG.Location = new System.Drawing.Point(538, 78);
+            this.cboTG.Name = "cboTG";
+            this.cboTG.Size = new System.Drawing.Size(151, 21);
+            this.cboTG.TabIndex = 4;
+            this.cboTG.Text = "--Chọn tôn giáo--";
             // 
-            // comboBox2
+            // cboDT
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(538, 54);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(151, 21);
-            this.comboBox2.TabIndex = 4;
+            this.cboDT.FormattingEnabled = true;
+            this.cboDT.Location = new System.Drawing.Point(538, 54);
+            this.cboDT.Name = "cboDT";
+            this.cboDT.Size = new System.Drawing.Size(151, 21);
+            this.cboDT.TabIndex = 4;
+            this.cboDT.Text = "--Chọn dân tộc--";
             // 
-            // comboBox1
+            // cboMaLp
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(538, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cboMaLp.FormattingEnabled = true;
+            this.cboMaLp.Location = new System.Drawing.Point(538, 30);
+            this.cboMaLp.Name = "cboMaLp";
+            this.cboMaLp.Size = new System.Drawing.Size(151, 21);
+            this.cboMaLp.TabIndex = 4;
+            this.cboMaLp.Text = "--Chọn mã lớp--";
             // 
-            // dateTimePicker1
+            // dtpNgaySinh
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(81, 130);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(238, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(81, 130);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(238, 20);
+            this.dtpNgaySinh.TabIndex = 3;
             // 
-            // radioButton2
+            // rdbNu
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(184, 104);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbNu.AutoSize = true;
+            this.rdbNu.Location = new System.Drawing.Point(184, 104);
+            this.rdbNu.Name = "rdbNu";
+            this.rdbNu.Size = new System.Drawing.Size(39, 17);
+            this.rdbNu.TabIndex = 2;
+            this.rdbNu.TabStop = true;
+            this.rdbNu.Text = "Nữ";
+            this.rdbNu.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdbNam
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(80, 105);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbNam.AutoSize = true;
+            this.rdbNam.Location = new System.Drawing.Point(80, 105);
+            this.rdbNam.Name = "rdbNam";
+            this.rdbNam.Size = new System.Drawing.Size(47, 17);
+            this.rdbNam.TabIndex = 2;
+            this.rdbNam.TabStop = true;
+            this.rdbNam.Text = "Nam";
+            this.rdbNam.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtTenHS
             // 
-            this.textBox3.Location = new System.Drawing.Point(80, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(239, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtTenHS.Location = new System.Drawing.Point(80, 75);
+            this.txtTenHS.Name = "txtTenHS";
+            this.txtTenHS.Size = new System.Drawing.Size(239, 20);
+            this.txtTenHS.TabIndex = 1;
             // 
-            // textBox2
+            // txtHoHS
             // 
-            this.textBox2.Location = new System.Drawing.Point(80, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(239, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtHoHS.Location = new System.Drawing.Point(80, 51);
+            this.txtHoHS.Name = "txtHoHS";
+            this.txtHoHS.Size = new System.Drawing.Size(239, 20);
+            this.txtHoHS.TabIndex = 1;
             // 
-            // textBox4
+            // txtDC
             // 
-            this.textBox4.Location = new System.Drawing.Point(538, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(288, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtDC.Location = new System.Drawing.Point(538, 105);
+            this.txtDC.Name = "txtDC";
+            this.txtDC.Size = new System.Drawing.Size(288, 20);
+            this.txtDC.TabIndex = 1;
             // 
-            // textBox1
+            // txtMaHS
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtMaHS.Location = new System.Drawing.Point(80, 27);
+            this.txtMaHS.Name = "txtMaHS";
+            this.txtMaHS.Size = new System.Drawing.Size(100, 20);
+            this.txtMaHS.TabIndex = 1;
             // 
             // label5
             // 
@@ -270,47 +284,79 @@
             this.btnXoa,
             this.btnLamMoi,
             this.btnThoat});
-            this.mnsIDU.Location = new System.Drawing.Point(3, 234);
+            this.mnsIDU.Location = new System.Drawing.Point(27, 286);
             this.mnsIDU.Name = "mnsIDU";
-            this.mnsIDU.Size = new System.Drawing.Size(408, 24);
+            this.mnsIDU.Size = new System.Drawing.Size(465, 104);
             this.mnsIDU.TabIndex = 1;
             this.mnsIDU.Text = "menuStrip1";
             // 
             // btnThem
             // 
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnThem.ImageTransparentColor = System.Drawing.Color.White;
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(50, 20);
+            this.btnThem.Size = new System.Drawing.Size(60, 100);
             this.btnThem.Text = "Thêm";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // btnThayDoi
             // 
+            this.btnThayDoi.Image = ((System.Drawing.Image)(resources.GetObject("btnThayDoi.Image")));
+            this.btnThayDoi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThayDoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnThayDoi.Name = "btnThayDoi";
-            this.btnThayDoi.Size = new System.Drawing.Size(117, 20);
+            this.btnThayDoi.Size = new System.Drawing.Size(117, 100);
             this.btnThayDoi.Text = "Thay đổi thông tin";
+            this.btnThayDoi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThayDoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // btnLuu
             // 
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLuu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(39, 20);
+            this.btnLuu.Size = new System.Drawing.Size(60, 100);
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // btnXoa
             // 
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnXoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(39, 20);
+            this.btnXoa.Size = new System.Drawing.Size(60, 100);
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.AutoSize = false;
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLamMoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(105, 20);
+            this.btnLamMoi.Size = new System.Drawing.Size(100, 100);
             this.btnLamMoi.Text = "Làm mới dữ liệu";
+            this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // btnThoat
             // 
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThoat.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(50, 20);
+            this.btnThoat.Size = new System.Drawing.Size(60, 100);
             this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStrip1
             // 
@@ -324,67 +370,137 @@
             // 
             this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnTimKiem,
+            toolStripLabel1,
             this.txtMa,
             this.txtHo,
-            this.toolStripTextBox1,
+            this.txtTen,
             this.cboMalop,
             this.cboDantoc,
             this.cboTongiao});
-            this.toolStrip2.Location = new System.Drawing.Point(343, 198);
+            this.toolStrip2.Location = new System.Drawing.Point(27, 209);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(743, 27);
+            this.toolStrip2.Size = new System.Drawing.Size(757, 53);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(23, 24);
-            this.btnTimKiem.Text = "Tìm kiếm";
-            // 
-            // cboMalop
-            // 
-            this.cboMalop.Name = "cboMalop";
-            this.cboMalop.Size = new System.Drawing.Size(121, 25);
-            this.cboMalop.Text = "Mã Lớp";
-            // 
-            // cboDantoc
-            // 
-            this.cboDantoc.Name = "cboDantoc";
-            this.cboDantoc.Size = new System.Drawing.Size(121, 25);
-            this.cboDantoc.Text = "--Dân Tộc";
-            // 
-            // cboTongiao
-            // 
-            this.cboTongiao.Name = "cboTongiao";
-            this.cboTongiao.Size = new System.Drawing.Size(121, 25);
-            this.cboTongiao.Text = "Tôn Giáo";
             // 
             // txtMa
             // 
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(100, 25);
+            this.txtMa.Size = new System.Drawing.Size(100, 53);
             this.txtMa.Text = "--Mã HS";
             // 
             // txtHo
             // 
             this.txtHo.Name = "txtHo";
-            this.txtHo.Size = new System.Drawing.Size(100, 25);
+            this.txtHo.Size = new System.Drawing.Size(100, 53);
             this.txtHo.Text = "--Họ HS";
             // 
-            // toolStripTextBox1
+            // txtTen
             // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(100, 53);
+            this.txtTen.Text = "--Tên HS";
+            // 
+            // cboMalop
+            // 
+            this.cboMalop.Name = "cboMalop";
+            this.cboMalop.Size = new System.Drawing.Size(121, 53);
+            this.cboMalop.Text = "--Mã Lớp";
+            // 
+            // cboDantoc
+            // 
+            this.cboDantoc.Name = "cboDantoc";
+            this.cboDantoc.Size = new System.Drawing.Size(121, 53);
+            this.cboDantoc.Text = "--Dân Tộc";
+            // 
+            // cboTongiao
+            // 
+            this.cboTongiao.Name = "cboTongiao";
+            this.cboTongiao.Size = new System.Drawing.Size(121, 53);
+            this.cboTongiao.Text = "--Tôn Giáo";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaHS,
+            this.TenHS,
+            this.GT,
+            this.NgaySinh,
+            this.DiaChi,
+            this.DanToc,
+            this.TonGiao,
+            this.MaLop});
+            this.dataGridView1.Location = new System.Drawing.Point(27, 382);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(845, 61);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // MaHS
+            // 
+            this.MaHS.DataPropertyName = "MaHS";
+            this.MaHS.HeaderText = "Mã HS";
+            this.MaHS.Name = "MaHS";
+            // 
+            // TenHS
+            // 
+            this.TenHS.DataPropertyName = "TenHS";
+            this.TenHS.HeaderText = "Tên HS";
+            this.TenHS.Name = "TenHS";
+            // 
+            // GT
+            // 
+            this.GT.DataPropertyName = "GT";
+            this.GT.HeaderText = "Giới Tính";
+            this.GT.Name = "GT";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            // 
+            // DanToc
+            // 
+            this.DanToc.DataPropertyName = "DanToc";
+            this.DanToc.HeaderText = "Dân Tộc";
+            this.DanToc.Name = "DanToc";
+            // 
+            // TonGiao
+            // 
+            this.TonGiao.DataPropertyName = "TonGiao";
+            this.TonGiao.HeaderText = "Tôn Giáo";
+            this.TonGiao.Name = "TonGiao";
+            // 
+            // MaLop
+            // 
+            this.MaLop.DataPropertyName = "MaLop";
+            this.MaLop.HeaderText = "Mã Lớp";
+            this.MaLop.Name = "MaLop";
+            // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.AutoSize = false;
+            toolStripLabel1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel1.Image")));
+            toolStripLabel1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            toolStripLabel1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new System.Drawing.Size(70, 50);
+            toolStripLabel1.Text = "Tìm kiếm";
+            toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            toolStripLabel1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // ucHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
@@ -397,6 +513,7 @@
             this.mnsIDU.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,12 +522,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rdbNu;
+        private System.Windows.Forms.RadioButton rdbNam;
+        private System.Windows.Forms.TextBox txtTenHS;
+        private System.Windows.Forms.TextBox txtHoHS;
+        private System.Windows.Forms.TextBox txtDC;
+        private System.Windows.Forms.TextBox txtMaHS;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -420,10 +537,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.ComboBox cboTG;
+        private System.Windows.Forms.ComboBox cboDT;
+        private System.Windows.Forms.ComboBox cboMaLp;
         private System.Windows.Forms.MenuStrip mnsIDU;
         private System.Windows.Forms.ToolStripMenuItem btnThem;
         private System.Windows.Forms.ToolStripMenuItem btnThayDoi;
@@ -433,13 +550,21 @@
         private System.Windows.Forms.ToolStripMenuItem btnThoat;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripButton btnTimKiem;
         private System.Windows.Forms.ToolStripComboBox cboMalop;
         private System.Windows.Forms.ToolStripComboBox cboDantoc;
         private System.Windows.Forms.ToolStripComboBox cboTongiao;
         private System.Windows.Forms.ToolStripTextBox txtMa;
         private System.Windows.Forms.ToolStripTextBox txtHo;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripTextBox txtTen;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenHS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DanToc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TonGiao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaLop;
      //   private System.Windows.Forms.ToolStripContainer toolStripContainer1;
 
     }
