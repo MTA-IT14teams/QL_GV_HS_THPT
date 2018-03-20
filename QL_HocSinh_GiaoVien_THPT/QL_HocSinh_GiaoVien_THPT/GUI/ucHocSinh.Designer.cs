@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucHocSinh));
             System.Windows.Forms.ToolStripLabel toolStripLabel1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucHocSinh));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboTG = new System.Windows.Forms.ComboBox();
             this.cboDT = new System.Windows.Forms.ComboBox();
@@ -81,8 +81,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.AutoSize = false;
+            toolStripLabel1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel1.Image")));
+            toolStripLabel1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            toolStripLabel1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new System.Drawing.Size(70, 50);
+            toolStripLabel1.Text = "Tìm kiếm";
+            toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            toolStripLabel1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightBlue;
             this.groupBox1.Controls.Add(this.cboTG);
             this.groupBox1.Controls.Add(this.cboDT);
             this.groupBox1.Controls.Add(this.cboMaLp);
@@ -431,7 +444,7 @@
             this.DanToc,
             this.TonGiao,
             this.MaLop});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 382);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 393);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(845, 61);
             this.dataGridView1.TabIndex = 4;
@@ -484,22 +497,11 @@
             this.MaLop.HeaderText = "Mã Lớp";
             this.MaLop.Name = "MaLop";
             // 
-            // toolStripLabel1
-            // 
-            toolStripLabel1.AutoSize = false;
-            toolStripLabel1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel1.Image")));
-            toolStripLabel1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            toolStripLabel1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new System.Drawing.Size(70, 50);
-            toolStripLabel1.Text = "Tìm kiếm";
-            toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            toolStripLabel1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // ucHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.toolStrip1);
