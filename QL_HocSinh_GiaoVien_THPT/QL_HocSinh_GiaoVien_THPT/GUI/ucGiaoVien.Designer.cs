@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -48,10 +49,6 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.txtTimMaGV = new System.Windows.Forms.ToolStripTextBox();
-            this.txtTimTenGV = new System.Windows.Forms.ToolStripTextBox();
-            this.tlsTK = new System.Windows.Forms.ToolStripLabel();
             this.mnsIDU = new System.Windows.Forms.MenuStrip();
             this.btnThem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSua = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,10 +73,18 @@
             this.lblGT = new System.Windows.Forms.Label();
             this.lblTen = new System.Windows.Forms.Label();
             this.lblMaHS = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             this.mnsIDU.SuspendLayout();
             this.grbThongTinGiaoVien.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -187,46 +192,6 @@
             this.MaMon.HeaderText = "Mã môn";
             this.MaMon.Name = "MaMon";
             this.MaMon.Width = 80;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.txtTimMaGV,
-            this.txtTimTenGV,
-            this.tlsTK});
-            this.toolStrip1.Location = new System.Drawing.Point(585, 185);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(379, 50);
-            this.toolStrip1.TabIndex = 7;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // txtTimMaGV
-            // 
-            this.txtTimMaGV.Name = "txtTimMaGV";
-            this.txtTimMaGV.Size = new System.Drawing.Size(75, 50);
-            this.txtTimMaGV.Text = "Mã GV";
-            // 
-            // txtTimTenGV
-            // 
-            this.txtTimTenGV.Name = "txtTimTenGV";
-            this.txtTimTenGV.Size = new System.Drawing.Size(200, 50);
-            this.txtTimTenGV.Text = "Tên GV";
-            // 
-            // tlsTK
-            // 
-            this.tlsTK.AutoSize = false;
-            this.tlsTK.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.tlsTK.Image = ((System.Drawing.Image)(resources.GetObject("tlsTK.Image")));
-            this.tlsTK.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tlsTK.Name = "tlsTK";
-            this.tlsTK.Size = new System.Drawing.Size(60, 60);
-            this.tlsTK.Text = "Tìm kiếm";
-            this.tlsTK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tlsTK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // mnsIDU
             // 
@@ -493,13 +458,71 @@
             this.lblMaHS.TabIndex = 0;
             this.lblMaHS.Text = "Mã GV*";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.btnTimKiem);
+            this.groupBox1.Location = new System.Drawing.Point(479, 175);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(485, 69);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tìm kiếm";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.Location = new System.Drawing.Point(356, 19);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(63, 40);
+            this.btnTimKiem.TabIndex = 0;
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(41, 19);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(58, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Mã GV";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(41, 42);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(62, 17);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Tên GV";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(125, 20);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(214, 39);
+            this.textBox1.TabIndex = 4;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // ucGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvGiaoVien);
-            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.mnsIDU);
             this.Controls.Add(this.grbThongTinGiaoVien);
             this.Controls.Add(this.label1);
@@ -507,12 +530,12 @@
             this.Size = new System.Drawing.Size(1025, 513);
             this.Load += new System.EventHandler(this.ucGiaoVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.mnsIDU.ResumeLayout(false);
             this.mnsIDU.PerformLayout();
             this.grbThongTinGiaoVien.ResumeLayout(false);
             this.grbThongTinGiaoVien.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,10 +546,6 @@
         private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.DataGridView dgvGiaoVien;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripTextBox txtTimMaGV;
-        private System.Windows.Forms.ToolStripTextBox txtTimTenGV;
-        private System.Windows.Forms.ToolStripLabel tlsTK;
         private System.Windows.Forms.MenuStrip mnsIDU;
         private System.Windows.Forms.ToolStripMenuItem btnThem;
         private System.Windows.Forms.ToolStripMenuItem btnSua;
@@ -559,6 +578,13 @@
         private System.Windows.Forms.TextBox txtLuong;
         private System.Windows.Forms.RadioButton rdbNu;
         private System.Windows.Forms.RadioButton rdbNam;
-
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
