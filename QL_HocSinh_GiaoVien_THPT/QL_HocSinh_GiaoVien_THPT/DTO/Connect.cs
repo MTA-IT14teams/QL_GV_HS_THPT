@@ -7,18 +7,18 @@ using System.Data.SqlClient;
 
 namespace QL_HocSinh_GiaoVien_THPT.DTO
 {
-    public class Connect
+    class Connect
     {
-        public static SqlConnection myconnect = new SqlConnection(DTO.ConnectionString.stringConnect);
+        public static SqlConnection myconnect = new SqlConnection(DTO.ConnectString.StringConnect);
 
         public static void openConnect()
         {
-            Connect.myconnect.Open();
+            myconnect.Open();
         }
 
         public static void closeConnect()
         {
-            Connect.myconnect.Close();
+            myconnect.Close();
         }
     }
 }

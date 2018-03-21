@@ -20,7 +20,7 @@ namespace QL_HocSinh_GiaoVien_THPT
             frmConnectDatabase db = new frmConnectDatabase();
             db.ShowDialog();
 
-            if (DTO.ConnectionString.stringConnect != "")
+            if (DTO.ConnectString.StringConnect != "")
             {
                 Application.Run(new GUI.frmLogin());
             }

@@ -29,13 +29,13 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             if (cbxChonTaiKhoan.SelectedIndex == 0)
             {
-                DTO.ConnectionString.WinAuthentication = true;
+                DTO.ConnectString.WinAuthentication = true;
                 txtTenDangNhap.Enabled = false;
                 txtMK.Enabled = false;
             }
             if (cbxChonTaiKhoan.SelectedIndex == 1)
             {
-                DTO.ConnectionString.WinAuthentication = false;
+                DTO.ConnectString.WinAuthentication = false;
                 txtTenDangNhap.Enabled = true;
                 txtMK.Enabled = true;
             }
@@ -58,25 +58,30 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     return;
                 }
 
-                DTO.ConnectionString.ServerName = txtTenMayChu.Text.Trim();
-                DTO.ConnectionString.DatabaseName = txtTenCSDL.Text.Trim();
+                DTO.ConnectString.ServerName = txtTenMayChu.Text.Trim();
+                DTO.ConnectString.DatabaseName = txtTenCSDL.Text.Trim();
 
                 if (cbxChonTaiKhoan.SelectedIndex == 0)
                 {
-                    DTO.ConnectionString.WinAuthentication = true;
-                    DTO.ConnectionString.TaoChuoiKetNoi();
+                    DTO.ConnectString.WinAuthentication = true;
+                    DTO.ConnectString.TaoChuoiKetNoi();
                 }
                 else
                 {
+<<<<<<< HEAD
                     DTO.ConnectionString.UserName = txtTenDangNhap.Text.Trim();
                     DTO.ConnectionString.Password = txtMK.Text.Trim();
 
                     DTO.ConnectionString.WinAuthentication = false;
                     DTO.ConnectionString.TaoChuoiKetNoi();
+=======
+                    DTO.ConnectString.WinAuthentication = false;
+                    DTO.ConnectString.TaoChuoiKetNoi();
+>>>>>>> master
                 }
 
 
-                DTO.Connect.myconnect = new SqlConnection(DTO.ConnectionString.stringConnect);
+                DTO.Connect.myconnect = new SqlConnection(DTO.ConnectString.StringConnect);
                 DTO.Connect.openConnect();
 
                 if (DTO.Connect.myconnect.State == ConnectionState.Open)
