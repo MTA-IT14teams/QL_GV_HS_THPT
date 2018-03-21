@@ -244,7 +244,7 @@
             this.mnsIDU.Location = new System.Drawing.Point(3, 193);
             this.mnsIDU.Name = "mnsIDU";
             this.mnsIDU.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnsIDU.Size = new System.Drawing.Size(303, 24);
+            this.mnsIDU.Size = new System.Drawing.Size(395, 24);
             this.mnsIDU.TabIndex = 6;
             this.mnsIDU.Text = "menuStrip1";
             // 
@@ -268,7 +268,6 @@
             this.btnSua.Text = "Thay đổi thông tin";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -290,7 +289,6 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThoat
             // 
@@ -328,7 +326,6 @@
             this.grbThongTinGiaoVien.TabIndex = 5;
             this.grbThongTinGiaoVien.TabStop = false;
             this.grbThongTinGiaoVien.Text = "Thông tin giáo viên";
-//            this.grbThongTinGiaoVien.Enter += new System.EventHandler(this.grbThongTinGiaoVien_Enter);
             // 
             // rdbNu
             // 

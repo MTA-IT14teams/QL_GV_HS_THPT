@@ -59,6 +59,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         private void ucGiaoVien_Load(object sender, EventArgs e)
         {
             Khoa_btn();
+            //Khoa_btn();
             LoadGV();
         }
         public void SetNull()
@@ -70,7 +71,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             txtLuong.Text = "";
             dtpNgaySinh.Value = new DateTime(1900, 1, 1);
         }
-
+        private void Show_cbo_GV()
         private void dgvGiaoVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -101,7 +102,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
-
             themmoi = true;            
 
             //Mở nút lưu 
@@ -110,7 +110,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             btnXoa.Enabled = false;
             btnLuu.Enabled = true;
             //hienthi ds Ma Mon
-            SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+            SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
             conn.Open();
 
             //DataTable table = new DataTable("tblMonhoc");
@@ -131,7 +131,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             Mo_btn();
             SetNull();
             txtLuong.Text = "1000000";
-            conn.Close();
+            conn.Close();    
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -151,7 +151,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     try
                       {
                         
-                        SqlConnection connT = new SqlConnection(DTO.ConnectString.StringConnect);
+                        SqlConnection connT = new SqlConnection(DTO.ConnectionString.stringConnect);
                         connT.Open();
                         SqlCommand cmd = new SqlCommand("themGV1", connT);
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -202,7 +202,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 {
                     try
                     {
-                        SqlConnection connX = new SqlConnection(DTO.ConnectString.StringConnect);
+                        SqlConnection connX = new SqlConnection(DTO.ConnectionString.stringConnect);
                         connX.Open();
                         //MessageBox.Show("ok");
                         
@@ -253,70 +253,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             }
         }
 
-
-<<<<<<< HEAD
-=======
-                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-                conn.Open();               
-                string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString()+ "'"; 
-                DataTable dt =new DataTable();
-                SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL,conn);
-                sqlDa.Fill(dt);
-                cboMamon.DataSource = dt;
-                cboMamon.ValueMember = "MaMon";
-                cboMamon.DisplayMember = "TenMon";
-                Khoa_btn();
-            }
-            catch { }
-        }
->>>>>>> 1d5ab00fd2b894d6f28249a0745d07a4bc221afd
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            themmoi = false;
-            if (dong < 0)
-            {
-                MessageBox.Show("Chưa chọn giáo viên để sửa!");
-                return;
-            }
-            Mo_btn();
-            btnThem.Enabled = false;
-            btnXoa.Enabled = false;
-            btnLuu.Enabled = true;
-            //hienthi ds Ma Mon
-            SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-            conn.Open();
-            string strSQL = "select * from tblMonhoc";
-            DataTable dt = new DataTable();
-            SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
-            sqlDa.Fill(dt);
-            cboMamon.DataSource = dt;
-            cboMamon.DisplayMember = "TenMon";
-            cboMamon.ValueMember = "MaMon";
-            conn.Close();
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            DialogResult traloi;
-            traloi = MessageBox.Show("Bạn có muốn xóa dữ liệu?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-
-            if (traloi == DialogResult.OK)
-            {
-                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("xoaGV1", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter p = new SqlParameter("@MaGV", txtMaGV.Text);
-                cmd.Parameters.Add(p);
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Xoá thành công");
-                LoadGV();
-            }
-        }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn Thoát hay không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
@@ -330,6 +266,18 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 LoadGV();
             }
         }
+        private DataTable Show_GV(string dieukien)
+        {
+            SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
+            conn.Open();
+            string strSQL = "select * from tblGiaovien where MaGV = '" + dieukien + "'";
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+            sqlDa.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+    
 
 
     }
