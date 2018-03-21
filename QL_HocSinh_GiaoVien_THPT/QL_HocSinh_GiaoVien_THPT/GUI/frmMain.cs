@@ -74,5 +74,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             splitContainer1.Panel2.Controls.Add(gv);
             gv.Dock = DockStyle.Fill;
         }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

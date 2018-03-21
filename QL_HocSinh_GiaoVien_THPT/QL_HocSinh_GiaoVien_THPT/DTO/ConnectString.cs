@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QL_HocSinh_GiaoVien_THPT.DTO
 {
-    public static class ConnectionString
+    public static class ConnectString
     {
         public static string ServerName;
         public static string DatabaseName;
@@ -14,7 +14,7 @@ namespace QL_HocSinh_GiaoVien_THPT.DTO
         public static string Password;
         public static bool WinAuthentication;
 
-        public static string stringConnect="";
+        public static string StringConnect="";
 
         public static void TaoChuoiKetNoi()
         {
@@ -31,7 +31,7 @@ namespace QL_HocSinh_GiaoVien_THPT.DTO
                 Temp += "Integrated security = false; User ID= " + UserName + ";" + "Password =" + Password;
 
             }
-            stringConnect = Temp;
+            StringConnect = Temp;
         }
 
     }

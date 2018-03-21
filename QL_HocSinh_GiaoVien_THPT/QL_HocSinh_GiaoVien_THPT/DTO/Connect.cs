@@ -9,7 +9,7 @@ namespace QL_HocSinh_GiaoVien_THPT.DTO
 {
     class Connect
     {
-        public static SqlConnection myconnect = new SqlConnection(DTO.ConnectionString.stringConnect);
+        public static SqlConnection myconnect = new SqlConnection(DTO.ConnectString.StringConnect);
 
         public static void openConnect()
         {
