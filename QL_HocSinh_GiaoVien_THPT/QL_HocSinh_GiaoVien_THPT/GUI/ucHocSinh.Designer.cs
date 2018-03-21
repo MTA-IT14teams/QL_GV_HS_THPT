@@ -261,7 +261,7 @@
             this.btnThoat});
             this.mnsIDU.Location = new System.Drawing.Point(3, 234);
             this.mnsIDU.Name = "mnsIDU";
-            this.mnsIDU.Size = new System.Drawing.Size(500, 24);
+            this.mnsIDU.Size = new System.Drawing.Size(408, 24);
             this.mnsIDU.TabIndex = 1;
             this.mnsIDU.Text = "menuStrip1";
             // 
@@ -309,6 +309,7 @@
             this.Controls.Add(this.mnsIDU);
             this.Name = "ucHocSinh";
             this.Size = new System.Drawing.Size(1025, 513);
+            this.Load += new System.EventHandler(this.ucHocSinh_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.mnsIDU.ResumeLayout(false);

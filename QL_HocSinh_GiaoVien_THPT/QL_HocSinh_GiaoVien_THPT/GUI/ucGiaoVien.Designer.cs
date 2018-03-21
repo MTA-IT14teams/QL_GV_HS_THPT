@@ -39,10 +39,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucGiaoVien));
             this.label1 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
+
 //<<<<<<< HEAD
-=======
->>>>>>> 56a72bf398e84e3b495f9071d9f036c2ad4e1293
+
             this.dgvGiaoVien = new System.Windows.Forms.DataGridView();
             this.MaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,17 +85,17 @@
             this.toolStrip1.SuspendLayout();
             this.mnsIDU.SuspendLayout();
             this.grbThongTinGiaoVien.SuspendLayout();
-<<<<<<< HEAD
+
 //=======
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
 //>>>>>>> 347b8509a5968341c4782918689a99cdf18d730f
-=======
+
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
->>>>>>> 56a72bf398e84e3b495f9071d9f036c2ad4e1293
+
             this.SuspendLayout();
             // 
             // label1
@@ -527,10 +526,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-//<<<<<<< HEAD
-=======
->>>>>>> 56a72bf398e84e3b495f9071d9f036c2ad4e1293
+
             this.Controls.Add(this.dgvGiaoVien);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.mnsIDU);
@@ -548,7 +544,7 @@
             this.mnsIDU.PerformLayout();
             this.grbThongTinGiaoVien.ResumeLayout(false);
             this.grbThongTinGiaoVien.PerformLayout();
-<<<<<<< HEAD
+
 //=======
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
@@ -558,10 +554,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
 //>>>>>>> 347b8509a5968341c4782918689a99cdf18d730f
-=======
+
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
->>>>>>> 56a72bf398e84e3b495f9071d9f036c2ad4e1293
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -570,11 +566,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-<<<<<<< HEAD
-//<<<<<<< HEAD
-=======
 
->>>>>>> 56a72bf398e84e3b495f9071d9f036c2ad4e1293
+
         private System.Windows.Forms.DataGridView dgvGiaoVien;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripTextBox txtTimMaGV;
@@ -612,16 +605,14 @@
         private System.Windows.Forms.TextBox txtLuong;
         private System.Windows.Forms.RadioButton rdbNu;
         private System.Windows.Forms.RadioButton rdbNam;
-<<<<<<< HEAD
-//=======
+
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
 //>>>>>>> 347b8509a5968341c4782918689a99cdf18d730f
-=======
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
 
->>>>>>> 56a72bf398e84e3b495f9071d9f036c2ad4e1293
+        //private System.Windows.Forms.DataGridView dataGridView1;
+       // private System.Windows.Forms.DataGridView dataGridView2;
+
     }
 }
