@@ -59,6 +59,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         private void ucGiaoVien_Load(object sender, EventArgs e)
         {
             Khoa_btn();
+            //Khoa_btn();
             LoadGV();
         }
         public void SetNull()
@@ -71,48 +72,60 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             dtpNgaySinh.Value = new DateTime(1900, 1, 1);
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void dgvGiaoVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
 
-            themmoi = true;
-            #region
-            ////Lấy mã môn học
-            //SqlConnection conn = new SqlConnection(DTO.ConnectionString.stringConnect);
-            //conn.Open();
-            //string sql = "Select *from tblMonhoc";
-            //cboMamon.DataSource = sql;
-            //cboMamon.DisplayMember = "MaMon";
-            //cboMamon.ValueMember = "MaMon";
-            #endregion
-
-            //Mở nút thêm và lưu 
-            txtMaGV.Enabled = true;
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
-            btnLuu.Enabled = true;
-            //hienthi ds Ma Mon
+                dong = e.RowIndex;
+                txtMaGV.Text = dgvGiaoVien.Rows[dong].Cells[0].Value.ToString();
+                txtTen.Text = dgvGiaoVien.Rows[dong].Cells[1].Value.ToString();
+                if (dgvGiaoVien.Rows[e.RowIndex].Cells["GT"].Value.ToString() == "Nam") rdbNam.Checked = true;
+                else rdbNu.Checked = true;
+                dtpNgaySinh.Text = dgvGiaoVien.Rows[dong].Cells[3].Value.ToString();
+                txtSDT.Text = dgvGiaoVien.Rows[dong].Cells[4].Value.ToString();
+                txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[5].Value.ToString();
+                txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
+                
+                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+                conn.Open();
+                string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString() + "'";
+                DataTable dt = new DataTable();
+                SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+                sqlDa.Fill(dt);
+                cboMamon.DataSource = dt;
+                cboMamon.ValueMember = "MaMon";
+                cboMamon.DisplayMember = "TenMon";
+                Khoa_btn();
+            }
+            catch { }
+        }
+        private void show_cboMonhoc()
+        {
             SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
             conn.Open();
-
-            //DataTable table = new DataTable("tblMonhoc");
-            //// new 1 DataView  
-            //DataView dataView = new DataView(table);
-            //// chỉ lấy những moon hoc  
-            //dataView.RowFilter = "TenMon";
-            
-            string strSQL = "select * from tblMonhoc";
+            string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString() + "'";
             DataTable dt = new DataTable();
             SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
             sqlDa.Fill(dt);
             cboMamon.DataSource = dt;
             cboMamon.DisplayMember = "TenMon";
             cboMamon.ValueMember = "MaMon";
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            themmoi = true;            
 
+            //Mở nút lưu 
+            txtMaGV.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+            
             txtMaGV.Focus();
             Mo_btn();
             SetNull();
-            txtLuong.Text = "1000000";
-            conn.Close();
+            txtLuong.Text = "1000000";    
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -131,8 +144,8 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 {
                     try
                       {
-                        
-                        SqlConnection connT = new SqlConnection(DTO.ConnectString.StringConnect);
+
+                          SqlConnection connT = new SqlConnection(DTO.ConnectString.StringConnect);
                         connT.Open();
                         SqlCommand cmd = new SqlCommand("themGV1", connT);
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -145,7 +158,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                         else 
                             p = new SqlParameter("@GT", "Nữ");
                         cmd.Parameters.Add(p);
-                        p = new SqlParameter("NgaySinh",dtpNgaySinh.Value.Year.ToString() + "-" +
+                        p = new SqlParameter("@NgaySinh",dtpNgaySinh.Value.Year.ToString() + "-" +
                         dtpNgaySinh.Value.Month.ToString() + "-" + dtpNgaySinh.Value.Day.ToString());
                         cmd.Parameters.Add(p);
                         p = new SqlParameter("@SDT", txtSDT.Text);
@@ -234,33 +247,29 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             }
         }
 
-        private void dgvGiaoVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("Bạn có muốn Thoát hay không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                
-                dong = e.RowIndex;
-                txtMaGV.Text = dgvGiaoVien.Rows[dong].Cells[0].Value.ToString();
-                txtTen.Text = dgvGiaoVien.Rows[dong].Cells[1].Value.ToString();
-                if (dgvGiaoVien.Rows[e.RowIndex].Cells["GT"].Value.ToString() == "Nam") rdbNam.Checked = true;
-                else rdbNu.Checked = true;
-                dtpNgaySinh.Text = dgvGiaoVien.Rows[dong].Cells[3].Value.ToString();
-                txtSDT.Text = dgvGiaoVien.Rows[dong].Cells[4].Value.ToString();
-                txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[5].Value.ToString();
-                txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
-
-                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-                conn.Open();               
-                string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString()+ "'"; 
-                DataTable dt =new DataTable();
-                SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL,conn);
-                sqlDa.Fill(dt);
-                cboMamon.DataSource = dt;
-                cboMamon.ValueMember = "MaMon";
-                cboMamon.DisplayMember = "TenMon";
-                Khoa_btn();
+                btnThem.Enabled = true;
+                btnLuu.Enabled = false;
+                btnXoa.Enabled = true;
+                btnSua.Enabled = true;
+                SetNull();
+                Khoa_btn();/*không cho thao tác*/
+                LoadGV();
             }
-            catch { }
+        }
+        private DataTable Show_GV(string dieukien)
+        {
+            SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+            conn.Open();
+            string strSQL = "select * from tblGiaovien where MaGV = '" + dieukien + "'";
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+            sqlDa.Fill(dt);
+            conn.Close();
+            return dt;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -288,41 +297,19 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             conn.Close();
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            DialogResult traloi;
-            traloi = MessageBox.Show("Bạn có muốn xóa dữ liệu?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-            if (traloi == DialogResult.OK)
-            {
-                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("xoaGV1", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter p = new SqlParameter("@MaGV", txtMaGV.Text);
-                cmd.Parameters.Add(p);
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Xoá thành công");
-                LoadGV();
-            }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn Thoát hay không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                btnThem.Enabled = true;
-                btnLuu.Enabled = false;
-                btnXoa.Enabled = true;
-                btnSua.Enabled = true;
-                SetNull();
-                Khoa_btn();/*không cho thao tác*/
-                LoadGV();
-            }
+
         }
 
+        private void toolTimKiem_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
+        }
     }
 }
