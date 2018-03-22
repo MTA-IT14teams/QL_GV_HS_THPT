@@ -68,6 +68,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 }
                 else
                 {
+<<<<<<< HEAD
                     DTO.ConnectString.UserName = txtTenDangNhap.Text.Trim();
 
                     DTO.ConnectString.Password = txtMK.Text.Trim();
@@ -78,6 +79,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     DTO.ConnectString.WinAuthentication = false;
                     DTO.ConnectString.TaoChuoiKetNoi();
 
+=======
+                    DTO.ConnectionString.WinAuthentication = false;
+                    DTO.ConnectionString.TaoChuoiKetNoi();
+>>>>>>> parent of 56a72bf... update quản lý giảng dạy
                 }
 
 
