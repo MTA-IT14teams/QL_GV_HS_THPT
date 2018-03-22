@@ -98,6 +98,7 @@ D:\GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\De
 >>>>>>> cce0cd0eeea22b351119b576022a17ddde2a26b5
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.pdb
 >>>>>>> 56a72bf398e84e3b495f9071d9f036c2ad4e1293
@@ -154,6 +155,8 @@ E:\GitHub_Desktop\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THP
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
 >>>>>>> master
+=======
+>>>>>>> parent of 56a72bf... update quản lý giảng dạy
 =======
 >>>>>>> parent of 56a72bf... update quản lý giảng dạy
 =======
