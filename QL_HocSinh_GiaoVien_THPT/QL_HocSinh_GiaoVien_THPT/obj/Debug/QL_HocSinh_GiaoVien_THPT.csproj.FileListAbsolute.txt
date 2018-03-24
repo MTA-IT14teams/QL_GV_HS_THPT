@@ -99,6 +99,7 @@ E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVie
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\ThucTapNhom\Project\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.pdb
@@ -137,6 +138,8 @@ C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\bai tap\QL_GV_HS_THPT\QL_GV_HS_T
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\bai tap\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
 >>>>>>> master
 >>>>>>> parent of 3cf3532... Merge branch 'master' into QuanLyGiangDay
+=======
+>>>>>>> parent of 56a72bf... update quản lý giảng dạy
 =======
 >>>>>>> parent of 56a72bf... update quản lý giảng dạy
 =======
