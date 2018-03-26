@@ -59,7 +59,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         private void ucGiaoVien_Load(object sender, EventArgs e)
         {
             Khoa_btn();
-            //Khoa_btn();
             LoadGV();
         }
         public void SetNull()
@@ -340,6 +339,12 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
            
                 
+        }
+
+        private void tlsRefresh_Click(object sender, EventArgs e)
+        {
+            Khoa_btn();
+            LoadGV();
         }
 
     }
