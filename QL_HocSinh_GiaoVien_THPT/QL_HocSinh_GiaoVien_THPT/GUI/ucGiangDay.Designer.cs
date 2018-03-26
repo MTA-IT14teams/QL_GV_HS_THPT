@@ -47,7 +47,6 @@
             this.Controls.Add(this.label1);
             this.Name = "ucGiangDay";
             this.Size = new System.Drawing.Size(1025, 513);
-            this.Load += new System.EventHandler(this.ucGiangDay_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
