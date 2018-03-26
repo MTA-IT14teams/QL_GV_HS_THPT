@@ -75,13 +75,22 @@
             this.lblTen = new System.Windows.Forms.Label();
             this.lblMaHS = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+<<<<<<< HEAD
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.btnTimKiem = new System.Windows.Forms.Button();
+=======
+>>>>>>> 6a12240fb0efe7fdcd12a7fcfce2c06957c6ee06
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.rdTKTen = new System.Windows.Forms.RadioButton();
+            this.rdTKMa = new System.Windows.Forms.RadioButton();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
             this.mnsIDU.SuspendLayout();
             this.grbThongTinGiaoVien.SuspendLayout();
@@ -117,9 +126,9 @@
             this.DiaChi,
             this.Luong,
             this.MaMon});
-            this.dgvGiaoVien.Location = new System.Drawing.Point(3, 250);
+            this.dgvGiaoVien.Location = new System.Drawing.Point(18, 253);
             this.dgvGiaoVien.Name = "dgvGiaoVien";
-            this.dgvGiaoVien.Size = new System.Drawing.Size(961, 246);
+            this.dgvGiaoVien.Size = new System.Drawing.Size(986, 246);
             this.dgvGiaoVien.TabIndex = 8;
             this.dgvGiaoVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGiaoVien_CellContentClick);
             this.dgvGiaoVien.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGiaoVien_CellMouseEnter);
@@ -205,7 +214,7 @@
             this.btnXoa,
             this.tlsRefresh,
             this.btnThoat});
-            this.mnsIDU.Location = new System.Drawing.Point(3, 185);
+            this.mnsIDU.Location = new System.Drawing.Point(18, 183);
             this.mnsIDU.Name = "mnsIDU";
             this.mnsIDU.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.mnsIDU.Size = new System.Drawing.Size(373, 55);
@@ -226,6 +235,7 @@
             // 
             // btnSua
             // 
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -280,6 +290,7 @@
             // 
             // grbThongTinGiaoVien
             // 
+            this.grbThongTinGiaoVien.BackColor = System.Drawing.Color.LightBlue;
             this.grbThongTinGiaoVien.Controls.Add(this.rdbNu);
             this.grbThongTinGiaoVien.Controls.Add(this.rdbNam);
             this.grbThongTinGiaoVien.Controls.Add(this.txtLuong);
@@ -297,9 +308,10 @@
             this.grbThongTinGiaoVien.Controls.Add(this.lblGT);
             this.grbThongTinGiaoVien.Controls.Add(this.lblTen);
             this.grbThongTinGiaoVien.Controls.Add(this.lblMaHS);
-            this.grbThongTinGiaoVien.Location = new System.Drawing.Point(3, 19);
+            this.grbThongTinGiaoVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbThongTinGiaoVien.Location = new System.Drawing.Point(0, 0);
             this.grbThongTinGiaoVien.Name = "grbThongTinGiaoVien";
-            this.grbThongTinGiaoVien.Size = new System.Drawing.Size(961, 150);
+            this.grbThongTinGiaoVien.Size = new System.Drawing.Size(1025, 159);
             this.grbThongTinGiaoVien.TabIndex = 5;
             this.grbThongTinGiaoVien.TabStop = false;
             this.grbThongTinGiaoVien.Text = "Thông tin giáo viên";
@@ -309,7 +321,7 @@
             this.rdbNu.AutoSize = true;
             this.rdbNu.Location = new System.Drawing.Point(196, 80);
             this.rdbNu.Name = "rdbNu";
-            this.rdbNu.Size = new System.Drawing.Size(39, 17);
+            this.rdbNu.Size = new System.Drawing.Size(43, 20);
             this.rdbNu.TabIndex = 22;
             this.rdbNu.TabStop = true;
             this.rdbNu.Text = "Nữ";
@@ -320,7 +332,7 @@
             this.rdbNam.AutoSize = true;
             this.rdbNam.Location = new System.Drawing.Point(93, 80);
             this.rdbNam.Name = "rdbNam";
-            this.rdbNam.Size = new System.Drawing.Size(47, 17);
+            this.rdbNam.Size = new System.Drawing.Size(55, 20);
             this.rdbNam.TabIndex = 21;
             this.rdbNam.TabStop = true;
             this.rdbNam.Text = "Nam";
@@ -468,20 +480,27 @@
             this.lblMaHS.TabIndex = 0;
             this.lblMaHS.Text = "Mã GV*";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Controls.Add(this.btnTimKiem);
-            this.groupBox1.Location = new System.Drawing.Point(479, 175);
+            this.groupBox1.Controls.Add(this.txtTimKiem);
+            this.groupBox1.Controls.Add(this.rdTKTen);
+            this.groupBox1.Controls.Add(this.rdTKMa);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(579, 169);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(485, 69);
+            this.groupBox1.Size = new System.Drawing.Size(425, 69);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+<<<<<<< HEAD
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(125, 20);
@@ -489,18 +508,38 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(214, 39);
             this.textBox1.TabIndex = 4;
+=======
+            // btnTimKiem
             // 
-            // radioButton2
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.Location = new System.Drawing.Point(344, 19);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(59, 44);
+            this.btnTimKiem.TabIndex = 3;
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click_1);
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(41, 42);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(62, 17);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Tên GV";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            // txtTimKiem
             // 
+            this.txtTimKiem.Location = new System.Drawing.Point(124, 31);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(204, 32);
+            this.txtTimKiem.TabIndex = 2;
+>>>>>>> 6a12240fb0efe7fdcd12a7fcfce2c06957c6ee06
+            // 
+            // rdTKTen
+            // 
+            this.rdTKTen.AutoSize = true;
+            this.rdTKTen.Location = new System.Drawing.Point(37, 44);
+            this.rdTKTen.Name = "rdTKTen";
+            this.rdTKTen.Size = new System.Drawing.Size(65, 19);
+            this.rdTKTen.TabIndex = 1;
+            this.rdTKTen.TabStop = true;
+            this.rdTKTen.Text = "Tên GV";
+            this.rdTKTen.UseVisualStyleBackColor = true;
+            // 
+<<<<<<< HEAD
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -521,17 +560,29 @@
             this.btnTimKiem.TabIndex = 0;
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click_1);
+=======
+            // rdTKMa
             // 
-            // contextMenuStrip1
+            this.rdTKMa.AutoSize = true;
+            this.rdTKMa.Location = new System.Drawing.Point(37, 19);
+            this.rdTKMa.Name = "rdTKMa";
+            this.rdTKMa.Size = new System.Drawing.Size(62, 19);
+            this.rdTKMa.TabIndex = 0;
+            this.rdTKMa.TabStop = true;
+            this.rdTKMa.Text = "Mã GV";
+            this.rdTKMa.UseVisualStyleBackColor = true;
+>>>>>>> 6a12240fb0efe7fdcd12a7fcfce2c06957c6ee06
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
             // ucGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvGiaoVien);
             this.Controls.Add(this.mnsIDU);
@@ -590,13 +641,17 @@
         private System.Windows.Forms.RadioButton rdbNu;
         private System.Windows.Forms.RadioButton rdbNam;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem tlsRefresh;
+=======
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.RadioButton rdTKTen;
+        private System.Windows.Forms.RadioButton rdTKMa;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+>>>>>>> 6a12240fb0efe7fdcd12a7fcfce2c06957c6ee06
     }
 }

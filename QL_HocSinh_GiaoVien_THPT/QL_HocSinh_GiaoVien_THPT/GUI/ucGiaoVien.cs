@@ -268,16 +268,52 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             conn.Close();
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        // Tìm Kiếm
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                if (rdTKMa.Checked == true)
+                {
+                    SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+                    conn.Open();
+                    string strSQL = "SELECT MaGV, TenGV, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien WHERE MaGV like N'%" + txtTimKiem.Text + "%'";
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL,conn);
+                    sqlDa.Fill(dt);
+                    dgvGiaoVien.DataSource = dt;
+                    conn.Close();
+                }
+                else if (rdTKTen.Checked == true)
+                {
+                    SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+                    conn.Open();
+                    string strSQL = "SELECT MaGV, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien WHERE TenGV like N'%" + txtTimKiem.Text + "%'";
+                    
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+                    sqlDa.Fill(dt);
+                    dgvGiaoVien.DataSource = dt;
+                    conn.Close();
+                }
+                else
+                {
+                    MessageBox.Show(" Mời bạn chọn lại!!!!");
+                    return;
+                }
+            
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
 
+            }
+
+           
+                
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+<<<<<<< HEAD
         private void toolTimKiem_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
@@ -351,5 +387,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         }
 
 
+=======
+>>>>>>> 6a12240fb0efe7fdcd12a7fcfce2c06957c6ee06
     }
 }
