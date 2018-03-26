@@ -77,6 +77,7 @@
             this.btnThoat.TabIndex = 23;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnDangNhap
             // 
@@ -97,6 +98,7 @@
             this.txtTenCSDL.Size = new System.Drawing.Size(361, 22);
             this.txtTenCSDL.TabIndex = 21;
             this.txtTenCSDL.Text = "QL_GV_HS_THPT";
+            this.txtTenCSDL.TextChanged += new System.EventHandler(this.txtTenCSDL_TextChanged);
             // 
             // label4
             // 
@@ -118,6 +120,7 @@
             this.txtMK.Size = new System.Drawing.Size(201, 22);
             this.txtMK.TabIndex = 19;
             this.txtMK.UseSystemPasswordChar = true;
+            this.txtMK.TextChanged += new System.EventHandler(this.txtMK_TextChanged);
             // 
             // label3
             // 
@@ -129,6 +132,7 @@
             this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 18;
             this.label3.Text = "Mật Khẩu";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtTenDangNhap
             // 
@@ -137,6 +141,7 @@
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(201, 22);
             this.txtTenDangNhap.TabIndex = 17;
+            this.txtTenDangNhap.TextChanged += new System.EventHandler(this.txtTenDangNhap_TextChanged);
             // 
             // label2
             // 
@@ -148,6 +153,7 @@
             this.label2.Size = new System.Drawing.Size(110, 17);
             this.label2.TabIndex = 16;
             this.label2.Text = "Tên Đăng Nhập";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtTenMayChu
             // 
@@ -170,6 +176,7 @@
             this.label1.Size = new System.Drawing.Size(69, 18);
             this.label1.TabIndex = 14;
             this.label1.Text = "Server";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmConnectDatabase
             // 

@@ -86,6 +86,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin học sinh";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // comboBox3
             // 
@@ -261,7 +262,7 @@
             this.btnThoat});
             this.mnsIDU.Location = new System.Drawing.Point(3, 234);
             this.mnsIDU.Name = "mnsIDU";
-            this.mnsIDU.Size = new System.Drawing.Size(500, 24);
+            this.mnsIDU.Size = new System.Drawing.Size(408, 24);
             this.mnsIDU.TabIndex = 1;
             this.mnsIDU.Text = "menuStrip1";
             // 

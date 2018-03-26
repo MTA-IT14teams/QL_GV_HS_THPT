@@ -16,5 +16,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

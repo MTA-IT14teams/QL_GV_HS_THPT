@@ -16,5 +16,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             InitializeComponent();
         }
+
+        private void ucGiangDay_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

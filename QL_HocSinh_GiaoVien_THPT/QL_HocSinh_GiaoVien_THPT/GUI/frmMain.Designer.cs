@@ -184,10 +184,10 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button btnGiaoVien;
         private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnGiangDay;
         private System.Windows.Forms.Button btnHocSinh;
+        public System.Windows.Forms.Button btnThoat;
     }
 }

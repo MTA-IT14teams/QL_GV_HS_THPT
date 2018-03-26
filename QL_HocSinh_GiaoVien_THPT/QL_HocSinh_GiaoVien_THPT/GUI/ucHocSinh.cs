@@ -16,5 +16,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

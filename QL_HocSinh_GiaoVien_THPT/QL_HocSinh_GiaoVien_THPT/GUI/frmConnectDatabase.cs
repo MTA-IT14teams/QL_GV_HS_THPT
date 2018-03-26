@@ -99,6 +99,41 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
         }
 
+        private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenCSDL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         
 
        

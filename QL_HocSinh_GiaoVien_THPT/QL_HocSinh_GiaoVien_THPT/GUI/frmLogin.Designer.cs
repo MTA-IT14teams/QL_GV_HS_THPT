@@ -99,6 +99,7 @@
             this.txtPassword.Size = new System.Drawing.Size(201, 23);
             this.txtPassword.TabIndex = 21;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtUsername
             // 
@@ -107,6 +108,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(201, 23);
             this.txtUsername.TabIndex = 20;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // lblUser
             // 
@@ -150,6 +152,7 @@
             this.cbLuuTK.TabIndex = 26;
             this.cbLuuTK.Text = "Nhớ Tài Khoản";
             this.cbLuuTK.UseVisualStyleBackColor = true;
+            this.cbLuuTK.CheckedChanged += new System.EventHandler(this.cbLuuTK_CheckedChanged);
             // 
             // frmLogin
             // 
