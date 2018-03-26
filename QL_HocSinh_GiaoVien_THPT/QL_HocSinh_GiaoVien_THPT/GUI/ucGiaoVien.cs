@@ -59,6 +59,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         private void ucGiaoVien_Load(object sender, EventArgs e)
         {
             Khoa_btn();
+            //Khoa_btn();
             LoadGV();
         }
         public void SetNull()
@@ -71,6 +72,34 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             dtpNgaySinh.Value = new DateTime(1900, 1, 1);
         }
 
+        private void dgvGiaoVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+
+                dong = e.RowIndex;
+                txtMaGV.Text = dgvGiaoVien.Rows[dong].Cells[0].Value.ToString();
+                txtTen.Text = dgvGiaoVien.Rows[dong].Cells[1].Value.ToString();
+                if (dgvGiaoVien.Rows[e.RowIndex].Cells["GT"].Value.ToString() == "Nam") rdbNam.Checked = true;
+                else rdbNu.Checked = true;
+                dtpNgaySinh.Text = dgvGiaoVien.Rows[dong].Cells[3].Value.ToString();
+                txtSDT.Text = dgvGiaoVien.Rows[dong].Cells[4].Value.ToString();
+                txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[5].Value.ToString();
+                txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
+                
+                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+                conn.Open();
+                string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString() + "'";
+                DataTable dt = new DataTable();
+                SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+                sqlDa.Fill(dt);
+                cboMamon.DataSource = dt;
+                cboMamon.ValueMember = "MaMon";
+                cboMamon.DisplayMember = "TenMon";
+                Khoa_btn();
+            }
+            catch { }
+        }
         private void show_cboMonhoc()
         {
             SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
@@ -313,81 +342,5 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 
         }
 
-<<<<<<< HEAD
-        private void toolTimKiem_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void tlsRefresh_Click(object sender, EventArgs e)
-        {
-            Khoa_btn();
-            LoadGV();
-        }
-
-        private void btnTimKiem_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvGiaoVien_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                dong = e.RowIndex;
-                txtMaGV.Text = dgvGiaoVien.Rows[dong].Cells[0].Value.ToString();
-                txtTen.Text = dgvGiaoVien.Rows[dong].Cells[1].Value.ToString();
-                if (dgvGiaoVien.Rows[e.RowIndex].Cells["GT"].Value.ToString() == "Nam") rdbNam.Checked = true;
-                else rdbNu.Checked = true;
-                dtpNgaySinh.Text = dgvGiaoVien.Rows[dong].Cells[3].Value.ToString();
-                txtSDT.Text = dgvGiaoVien.Rows[dong].Cells[4].Value.ToString();
-                txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[5].Value.ToString();
-                txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
-
-                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-                conn.Open();
-                string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString() + "'";
-                DataTable dt = new DataTable();
-                SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
-                sqlDa.Fill(dt);
-                cboMamon.DataSource = dt;
-                cboMamon.ValueMember = "MaMon";
-                cboMamon.DisplayMember = "TenMon";
-                Khoa_btn();
-            }
-            catch { }
-        }
-
-        private void dgvGiaoVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                dong = e.RowIndex;
-                txtMaGV.Text = dgvGiaoVien.Rows[dong].Cells[0].Value.ToString();
-                txtTen.Text = dgvGiaoVien.Rows[dong].Cells[1].Value.ToString();
-                if (dgvGiaoVien.Rows[e.RowIndex].Cells["GT"].Value.ToString() == "Nam") rdbNam.Checked = true;
-                else rdbNu.Checked = true;
-                dtpNgaySinh.Text = dgvGiaoVien.Rows[dong].Cells[3].Value.ToString();
-                txtSDT.Text = dgvGiaoVien.Rows[dong].Cells[4].Value.ToString();
-                txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[5].Value.ToString();
-                txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
-
-                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-                conn.Open();
-                string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString() + "'";
-                DataTable dt = new DataTable();
-                SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
-                sqlDa.Fill(dt);
-                cboMamon.DataSource = dt;
-                cboMamon.ValueMember = "MaMon";
-                cboMamon.DisplayMember = "TenMon";
-                Khoa_btn();
-            }
-            catch { }
-        }
-
-
-=======
->>>>>>> 6a12240fb0efe7fdcd12a7fcfce2c06957c6ee06
     }
 }
