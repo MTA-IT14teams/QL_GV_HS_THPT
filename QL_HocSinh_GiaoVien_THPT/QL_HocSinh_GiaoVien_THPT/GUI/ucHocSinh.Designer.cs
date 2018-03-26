@@ -359,7 +359,7 @@
             // 
             this.txtMaHS.Location = new System.Drawing.Point(80, 27);
             this.txtMaHS.Name = "txtMaHS";
-            this.txtMaHS.Size = new System.Drawing.Size(100, 20);
+            this.txtMaHS.Size = new System.Drawing.Size(102, 20);
             this.txtMaHS.TabIndex = 1;
             // 
             // label5
