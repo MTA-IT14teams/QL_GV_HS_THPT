@@ -54,6 +54,7 @@
             this.btnSua = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLuu = new System.Windows.Forms.ToolStripMenuItem();
             this.btnXoa = new System.Windows.Forms.ToolStripMenuItem();
+            this.tlsRefresh = new System.Windows.Forms.ToolStripMenuItem();
             this.btnThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.grbThongTinGiaoVien = new System.Windows.Forms.GroupBox();
             this.rdbNu = new System.Windows.Forms.RadioButton();
@@ -75,11 +76,11 @@
             this.lblMaHS = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
             this.mnsIDU.SuspendLayout();
@@ -120,7 +121,8 @@
             this.dgvGiaoVien.Name = "dgvGiaoVien";
             this.dgvGiaoVien.Size = new System.Drawing.Size(961, 246);
             this.dgvGiaoVien.TabIndex = 8;
-            this.dgvGiaoVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGiaoVien_CellClick);
+            this.dgvGiaoVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGiaoVien_CellContentClick);
+            this.dgvGiaoVien.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGiaoVien_CellMouseEnter);
             // 
             // MaGV
             // 
@@ -201,11 +203,12 @@
             this.btnSua,
             this.btnLuu,
             this.btnXoa,
+            this.tlsRefresh,
             this.btnThoat});
             this.mnsIDU.Location = new System.Drawing.Point(3, 185);
             this.mnsIDU.Name = "mnsIDU";
             this.mnsIDU.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnsIDU.Size = new System.Drawing.Size(313, 55);
+            this.mnsIDU.Size = new System.Drawing.Size(373, 55);
             this.mnsIDU.TabIndex = 6;
             this.mnsIDU.Text = "menuStrip1";
             // 
@@ -255,6 +258,13 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // tlsRefresh
+            // 
+            this.tlsRefresh.Name = "tlsRefresh";
+            this.tlsRefresh.Size = new System.Drawing.Size(60, 51);
+            this.tlsRefresh.Text = "Fefresh ";
+            this.tlsRefresh.Click += new System.EventHandler(this.tlsRefresh_Click);
             // 
             // btnThoat
             // 
@@ -472,25 +482,13 @@
             this.groupBox1.Text = "Tìm kiếm";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btnTimKiem
+            // textBox1
             // 
-            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.Location = new System.Drawing.Point(356, 19);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(63, 40);
-            this.btnTimKiem.TabIndex = 0;
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(41, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Mã GV";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(125, 20);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(214, 39);
+            this.textBox1.TabIndex = 4;
             // 
             // radioButton2
             // 
@@ -503,13 +501,26 @@
             this.radioButton2.Text = "Tên GV";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // radioButton1
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 39);
-            this.textBox1.TabIndex = 4;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(41, 19);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(58, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Mã GV";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.Location = new System.Drawing.Point(336, 20);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(63, 40);
+            this.btnTimKiem.TabIndex = 0;
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click_1);
             // 
             // contextMenuStrip1
             // 
@@ -586,5 +597,6 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tlsRefresh;
     }
 }
