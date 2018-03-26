@@ -162,7 +162,7 @@
             this.txtTenMayChu.Name = "txtTenMayChu";
             this.txtTenMayChu.Size = new System.Drawing.Size(361, 22);
             this.txtTenMayChu.TabIndex = 15;
-            this.txtTenMayChu.Text = "ADMIN-PC\\SQLSERVEREXPRESS";
+            this.txtTenMayChu.Text = "DESKTOP-LNKB7IU\\SQLEXPRESS";
             this.txtTenMayChu.TextChanged += new System.EventHandler(this.txtTenMayChu_TextChanged);
             // 
             // label1
