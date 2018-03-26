@@ -144,7 +144,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     try
                       {
 
-                          SqlConnection connT = new SqlConnection(DTO.ConnectString.StringConnect);
+                        SqlConnection connT = new SqlConnection(DTO.ConnectString.StringConnect);
                         connT.Open();
                         SqlCommand cmd = new SqlCommand("themGV1", connT);
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -168,12 +168,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                         cmd.Parameters.Add(p);         
                         p = new SqlParameter("@MaMon", cboMamon.SelectedValue.ToString());
                         cmd.Parameters.Add(p);
-
                         cmd.ExecuteNonQuery();
                         //Hiển thị lại thông tin sau khi thêm và thông báo
                         LoadGV();                        
                         MessageBox.Show("Thêm mới thành công");
-
                         //
                         txtMaGV.Enabled = false;
                         btnLuu.Enabled = false;
