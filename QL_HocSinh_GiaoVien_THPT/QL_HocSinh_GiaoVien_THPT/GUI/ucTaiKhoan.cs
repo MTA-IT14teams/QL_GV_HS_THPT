@@ -160,7 +160,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 dt.Load(dr);
                 dataGridView1.DataSource = dt;
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show(" không tìm thấy!");
             }

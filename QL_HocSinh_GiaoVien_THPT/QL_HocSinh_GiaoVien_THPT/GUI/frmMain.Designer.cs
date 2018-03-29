@@ -61,7 +61,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1119, 576);
+            this.splitContainer1.Size = new System.Drawing.Size(1119, 586);
             this.splitContainer1.SplitterDistance = 98;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -69,8 +69,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::QL_HocSinh_GiaoVien_THPT.Properties.Resources.if_mypc_unlock_41760;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.Location = new System.Drawing.Point(0, 425);
+            this.button2.Location = new System.Drawing.Point(0, 434);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 68);
             this.button2.TabIndex = 6;
@@ -83,8 +84,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::QL_HocSinh_GiaoVien_THPT.Properties.Resources.if_schedule_60204;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(0, 336);
+            this.button1.Location = new System.Drawing.Point(0, 345);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 83);
             this.button1.TabIndex = 5;
@@ -97,8 +99,9 @@
             // 
             this.btnGiangDay.BackColor = System.Drawing.Color.White;
             this.btnGiangDay.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiangDay.Image = global::QL_HocSinh_GiaoVien_THPT.Properties.Resources.if_Teacher_131497;
             this.btnGiangDay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGiangDay.Location = new System.Drawing.Point(0, 247);
+            this.btnGiangDay.Location = new System.Drawing.Point(0, 256);
             this.btnGiangDay.Name = "btnGiangDay";
             this.btnGiangDay.Size = new System.Drawing.Size(95, 83);
             this.btnGiangDay.TabIndex = 4;
@@ -111,10 +114,11 @@
             // 
             this.btnHocSinh.BackColor = System.Drawing.Color.White;
             this.btnHocSinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHocSinh.Image = global::QL_HocSinh_GiaoVien_THPT.Properties.Resources.if_Graduate_male_24_103824;
             this.btnHocSinh.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHocSinh.Location = new System.Drawing.Point(3, 163);
             this.btnHocSinh.Name = "btnHocSinh";
-            this.btnHocSinh.Size = new System.Drawing.Size(92, 78);
+            this.btnHocSinh.Size = new System.Drawing.Size(92, 88);
             this.btnHocSinh.TabIndex = 3;
             this.btnHocSinh.Text = "Học Sinh";
             this.btnHocSinh.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -125,7 +129,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.Location = new System.Drawing.Point(0, 499);
+            this.btnThoat.Location = new System.Drawing.Point(-1, 514);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(96, 72);
             this.btnThoat.TabIndex = 2;
@@ -163,7 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1119, 576);
+            this.ClientSize = new System.Drawing.Size(1119, 586);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
