@@ -168,8 +168,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             {
                 SqlConnection kn = new SqlConnection(DTO.ConnectString.StringConnect);
                 kn.Close();
-                //SqlConnection kn = new SqlConnection(@"Data Source=ADMIN-PC\SQLSERVEREXPRESS;Initial Catalog=QL_GV_HS_THPT;Integrated Security=True");
-                // kn.Close();
             }
         }
         private void ucRefresh_Click(object sender, EventArgs e)
