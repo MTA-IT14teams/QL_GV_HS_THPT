@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTKB = new System.Windows.Forms.DataGridView();
-            this.cbbLop = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnXem = new System.Windows.Forms.Button();
             this.Thu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbLop = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnXem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTKB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +53,7 @@
             // 
             // dgvTKB
             // 
+            this.dgvTKB.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvTKB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTKB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Thu,
@@ -63,6 +64,32 @@
             this.dgvTKB.Name = "dgvTKB";
             this.dgvTKB.Size = new System.Drawing.Size(889, 360);
             this.dgvTKB.TabIndex = 9;
+            // 
+            // Thu
+            // 
+            this.Thu.DataPropertyName = "Thu";
+            this.Thu.HeaderText = "Thứ";
+            this.Thu.Name = "Thu";
+            // 
+            // Tiet
+            // 
+            this.Tiet.DataPropertyName = "Tiet";
+            this.Tiet.HeaderText = "Tiết";
+            this.Tiet.Name = "Tiet";
+            // 
+            // TenGV
+            // 
+            this.TenGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenGV.DataPropertyName = "TenGV";
+            this.TenGV.HeaderText = "Tên Giáo Viên";
+            this.TenGV.Name = "TenGV";
+            // 
+            // TenMon
+            // 
+            this.TenMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenMon.DataPropertyName = "TenMon";
+            this.TenMon.HeaderText = "Tên Môn Học";
+            this.TenMon.Name = "TenMon";
             // 
             // cbbLop
             // 
@@ -93,32 +120,6 @@
             this.btnXem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXem.UseVisualStyleBackColor = true;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
-            // 
-            // Thu
-            // 
-            this.Thu.DataPropertyName = "Thu";
-            this.Thu.HeaderText = "Thứ";
-            this.Thu.Name = "Thu";
-            // 
-            // Tiet
-            // 
-            this.Tiet.DataPropertyName = "Tiet";
-            this.Tiet.HeaderText = "Tiết";
-            this.Tiet.Name = "Tiet";
-            // 
-            // TenGV
-            // 
-            this.TenGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenGV.DataPropertyName = "TenGV";
-            this.TenGV.HeaderText = "Tên Giáo Viên";
-            this.TenGV.Name = "TenGV";
-            // 
-            // TenMon
-            // 
-            this.TenMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenMon.DataPropertyName = "TenMon";
-            this.TenMon.HeaderText = "Tên Môn Học";
-            this.TenMon.Name = "TenMon";
             // 
             // ucThoiKhoaBieu
             // 
