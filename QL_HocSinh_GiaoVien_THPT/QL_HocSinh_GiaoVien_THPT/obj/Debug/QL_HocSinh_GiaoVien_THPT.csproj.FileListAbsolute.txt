@@ -139,6 +139,27 @@ E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT1\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_Gi
 E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+<<<<<<< HEAD
+>>>>>>> master
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csprojResolveAssemblyReference.cache
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmConnectDatabase.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmLogin.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmMain.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiangDay.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiaoVien.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucHocSinh.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucTaiKhoan.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucThoiKhoaBieu.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
+C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
+>>>>>>> QuanLyHocSinh
+=======
 E:\GitHub_Desktop\QL_GVHS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 E:\GitHub_Desktop\QL_GVHS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\GitHub_Desktop\QL_GVHS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
@@ -162,3 +183,4 @@ C:\Users\dell\Documents\TT_Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSin
 C:\Users\dell\Documents\TT_Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
 C:\Users\dell\Documents\TT_Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
 C:\Users\dell\Documents\TT_Nhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
+>>>>>>> 7c8581bc27acf19d7326b6f524bc20318c3aad14
