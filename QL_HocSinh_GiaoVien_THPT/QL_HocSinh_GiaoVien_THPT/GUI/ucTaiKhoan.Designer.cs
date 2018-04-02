@@ -59,11 +59,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.BackColor = System.Drawing.Color.Aqua;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(374, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(436, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 31);
             this.label1.TabIndex = 0;
@@ -75,22 +74,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.PowderBlue;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(65, 60);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(76, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtMaGV
             // 
-            this.txtMaGV.Location = new System.Drawing.Point(170, 150);
-            this.txtMaGV.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtMaGV.Location = new System.Drawing.Point(198, 130);
             this.txtMaGV.Name = "txtMaGV";
-            this.txtMaGV.Size = new System.Drawing.Size(130, 32);
+            this.txtMaGV.Size = new System.Drawing.Size(116, 20);
             this.txtMaGV.TabIndex = 2;
             this.txtMaGV.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -98,36 +95,32 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.PowderBlue;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(65, 105);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(76, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Password";
             this.label3.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtQuyen
             // 
-            this.txtQuyen.Location = new System.Drawing.Point(170, 195);
-            this.txtQuyen.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtQuyen.Location = new System.Drawing.Point(198, 169);
             this.txtQuyen.Name = "txtQuyen";
-            this.txtQuyen.Size = new System.Drawing.Size(130, 32);
+            this.txtQuyen.Size = new System.Drawing.Size(116, 20);
             this.txtQuyen.TabIndex = 2;
             this.txtQuyen.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ucThem
             // 
             this.ucThem.BackColor = System.Drawing.Color.LightCyan;
-            this.ucThem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ucThem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucThem.Image = ((System.Drawing.Image)(resources.GetObject("ucThem.Image")));
             this.ucThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucThem.Location = new System.Drawing.Point(137, 281);
-            this.ucThem.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.ucThem.Location = new System.Drawing.Point(160, 244);
             this.ucThem.Name = "ucThem";
-            this.ucThem.Size = new System.Drawing.Size(104, 53);
+            this.ucThem.Size = new System.Drawing.Size(97, 46);
             this.ucThem.TabIndex = 3;
             this.ucThem.Text = "Thêm";
             this.ucThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -142,12 +135,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.PowderBlue;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(65, 150);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(76, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.Size = new System.Drawing.Size(36, 14);
             this.label4.TabIndex = 7;
             this.label4.Text = "MaGV";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -156,32 +147,28 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.PowderBlue;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(65, 195);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.MaximumSize = new System.Drawing.Size(86, 116);
+            this.label5.Location = new System.Drawing.Point(76, 169);
+            this.label5.MaximumSize = new System.Drawing.Size(100, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 17);
+            this.label5.Size = new System.Drawing.Size(37, 14);
             this.label5.TabIndex = 8;
             this.label5.Text = "Quyen";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(170, 60);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtUsername.Location = new System.Drawing.Point(198, 52);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(130, 32);
+            this.txtUsername.Size = new System.Drawing.Size(116, 20);
             this.txtUsername.TabIndex = 9;
             this.txtUsername.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(170, 105);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtPassword.Location = new System.Drawing.Point(198, 91);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(130, 32);
+            this.txtPassword.Size = new System.Drawing.Size(116, 20);
             this.txtPassword.TabIndex = 10;
             this.txtPassword.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -190,10 +177,9 @@
             this.ucSua.BackColor = System.Drawing.Color.LightCyan;
             this.ucSua.Image = ((System.Drawing.Image)(resources.GetObject("ucSua.Image")));
             this.ucSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucSua.Location = new System.Drawing.Point(377, 116);
-            this.ucSua.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.ucSua.Location = new System.Drawing.Point(440, 101);
             this.ucSua.Name = "ucSua";
-            this.ucSua.Size = new System.Drawing.Size(104, 53);
+            this.ucSua.Size = new System.Drawing.Size(94, 46);
             this.ucSua.TabIndex = 11;
             this.ucSua.Text = "Sửa";
             this.ucSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -205,10 +191,9 @@
             this.ucXoa.BackColor = System.Drawing.Color.LightCyan;
             this.ucXoa.Image = ((System.Drawing.Image)(resources.GetObject("ucXoa.Image")));
             this.ucXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucXoa.Location = new System.Drawing.Point(485, 116);
-            this.ucXoa.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.ucXoa.Location = new System.Drawing.Point(555, 101);
             this.ucXoa.Name = "ucXoa";
-            this.ucXoa.Size = new System.Drawing.Size(104, 53);
+            this.ucXoa.Size = new System.Drawing.Size(96, 46);
             this.ucXoa.TabIndex = 12;
             this.ucXoa.Text = "Xóa";
             this.ucXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -220,10 +205,9 @@
             this.ucTimKiem.BackColor = System.Drawing.Color.LightCyan;
             this.ucTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("ucTimKiem.Image")));
             this.ucTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucTimKiem.Location = new System.Drawing.Point(701, 116);
-            this.ucTimKiem.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.ucTimKiem.Location = new System.Drawing.Point(799, 101);
             this.ucTimKiem.Name = "ucTimKiem";
-            this.ucTimKiem.Size = new System.Drawing.Size(104, 53);
+            this.ucTimKiem.Size = new System.Drawing.Size(97, 46);
             this.ucTimKiem.TabIndex = 14;
             this.ucTimKiem.Text = "Tìm Kiếm";
             this.ucTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -241,13 +225,10 @@
             this.groupBox1.Controls.Add(this.txtMaGV);
             this.groupBox1.Controls.Add(this.txtQuyen);
             this.groupBox1.Controls.Add(this.ucThem);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox1.Location = new System.Drawing.Point(14, 116);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(17, 101);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.groupBox1.Size = new System.Drawing.Size(358, 444);
+            this.groupBox1.Size = new System.Drawing.Size(417, 385);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin";
@@ -258,10 +239,9 @@
             this.ucRefresh.BackColor = System.Drawing.Color.LightCyan;
             this.ucRefresh.Image = ((System.Drawing.Image)(resources.GetObject("ucRefresh.Image")));
             this.ucRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucRefresh.Location = new System.Drawing.Point(593, 116);
-            this.ucRefresh.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.ucRefresh.Location = new System.Drawing.Point(669, 101);
             this.ucRefresh.Name = "ucRefresh";
-            this.ucRefresh.Size = new System.Drawing.Size(104, 53);
+            this.ucRefresh.Size = new System.Drawing.Size(104, 46);
             this.ucRefresh.TabIndex = 13;
             this.ucRefresh.Text = "Refresh";
             this.ucRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -305,28 +285,27 @@
             this.Pasword,
             this.MaGV,
             this.Quyen});
-            this.dataGridView1.Location = new System.Drawing.Point(377, 176);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(440, 153);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(559, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(589, 333);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(826, 132);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtTimKiem.Location = new System.Drawing.Point(929, 115);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(110, 21);
+            this.txtTimKiem.Size = new System.Drawing.Size(100, 20);
             this.txtTimKiem.TabIndex = 18;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // ucTaiKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ucTimKiem);
@@ -335,11 +314,10 @@
             this.Controls.Add(this.ucSua);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "ucTaiKhoan";
-            this.Size = new System.Drawing.Size(955, 577);
+            this.Size = new System.Drawing.Size(1065, 500);
             this.Load += new System.EventHandler(this.ucTaiKhoan_Load);
             this.Click += new System.EventHandler(this.ucTaiKhoan_Click);
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();

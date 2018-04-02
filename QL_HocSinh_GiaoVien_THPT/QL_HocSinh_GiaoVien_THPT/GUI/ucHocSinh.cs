@@ -13,16 +13,12 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 {
     public partial class ucHocSinh : UserControl
     {
-        bool themmoi = false;
         public ucHocSinh()
         {
             InitializeComponent();
         }
 
-<<<<<<< HEAD
-=======
-      
-        
+        bool themmoi = false;
         public void Ketnoi()
         {
             SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
@@ -64,21 +60,11 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             txtDC.Text = "";
             dtpNgaySinh.Value = new DateTime(1900, 1, 1);
         }
-        
-
->>>>>>> 0488d255716d1e8e02875f4d08e1d8a454fcff83
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-<<<<<<< HEAD
-=======
 
         private void ucHocSinh_Load(object sender, EventArgs e)
         {
             Ketnoi();
             LockControl();
-            //Show_CboTG("");
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -98,7 +84,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
         private void btnThayDoi_Click(object sender, EventArgs e)
         {
-            //Ketnoi();
             UnLockControl();
             btnThem.Enabled = false;
             btnLuu.Enabled = true;
@@ -136,7 +121,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                         cmd.Parameters.AddWithValue("@Dantoc", txtDT.Text.Trim());
                         cmd.Parameters.AddWithValue("@Tongiao", cboTG.ValueMember);
                         cmd.Parameters.AddWithValue("@Diachi", txtDC.Text.Trim());
-                       
+
                         cmd.ExecuteNonQuery();
 
                         Ketnoi();
@@ -272,7 +257,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             btnXoa.Enabled = true;
             btnThayDoi.Enabled = true;
         }
-       
->>>>>>> 0488d255716d1e8e02875f4d08e1d8a454fcff83
+
+
     }
 }

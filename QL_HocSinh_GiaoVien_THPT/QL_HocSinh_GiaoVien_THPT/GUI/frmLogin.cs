@@ -100,21 +100,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             Application.Exit();
         }
 
-        private void cbLuuTK_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
        
 
         

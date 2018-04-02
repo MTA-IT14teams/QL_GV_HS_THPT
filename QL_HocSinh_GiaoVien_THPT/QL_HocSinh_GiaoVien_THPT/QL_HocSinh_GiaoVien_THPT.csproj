@@ -139,6 +139,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -156,6 +157,93 @@
   <ItemGroup>
     <Folder Include="BUS\" />
     <Folder Include="VO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_elementary_school_45035.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_elementary_school_450351.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_School_37604.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Teacher_131497.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Graduate-male-24_103824.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_schedule_60204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_mypc_unlock_41760.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Them.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2Sua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3Xoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_update_product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee_mug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram_v2_02 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_preferences_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lorrygreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort_ascend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XoaH.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
