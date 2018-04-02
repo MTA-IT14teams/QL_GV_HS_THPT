@@ -119,7 +119,6 @@ C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_H
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\bai tap\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\bai tap\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\bai tap\QL_GV_HS_THPT\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
-<<<<<<< HEAD
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\GitHub_Desktop\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
@@ -143,7 +142,6 @@ E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT1\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_Gi
 E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
-=======
 >>>>>>> master
 C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 C:\Users\thanh\Desktop\QL_GV_HS_THPT-QuanLyHocSinh\QL_GV_HS_THPT-QuanLyHocSinh\QL_HocSinh_GiaoVien_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
