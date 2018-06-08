@@ -325,5 +325,27 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             LoadGV();
         }
 
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //try
+                //{
+                SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("XOAGIAOVIEN", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter p = new SqlParameter("@MaGV", txtMaGV.Text);
+                cmd.Parameters.Add(p);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Xóa thành công!");
+                LoadGV();
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show("Lỗi" + ex.Message);
+                //}
+            }
+        }
     }
 }
