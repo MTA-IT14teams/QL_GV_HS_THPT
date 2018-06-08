@@ -345,5 +345,25 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             LoadGV();
         }
 
+        private void rdbNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdTKMa_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdTKTen_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -59,14 +59,14 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.mnsIDU = new System.Windows.Forms.MenuStrip();
-            this.txtDT = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnThayDoi = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLuu = new System.Windows.Forms.ToolStripMenuItem();
             this.btnXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLamMoi = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtDT = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHS)).BeginInit();
             this.mnsIDU.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -132,6 +132,7 @@
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(238, 20);
             this.dtpNgaySinh.TabIndex = 3;
+            this.dtpNgaySinh.ValueChanged += new System.EventHandler(this.dtpNgaySinh_ValueChanged);
             // 
             // rdbNu
             // 
@@ -143,6 +144,7 @@
             this.rdbNu.TabStop = true;
             this.rdbNu.Text = "Nữ";
             this.rdbNu.UseVisualStyleBackColor = true;
+            this.rdbNu.CheckedChanged += new System.EventHandler(this.rdbNu_CheckedChanged);
             // 
             // rdbNam
             // 
@@ -154,6 +156,7 @@
             this.rdbNam.TabStop = true;
             this.rdbNam.Text = "Nam";
             this.rdbNam.UseVisualStyleBackColor = true;
+            this.rdbNam.CheckedChanged += new System.EventHandler(this.rdbNam_CheckedChanged);
             // 
             // txtTenHS
             // 
@@ -175,6 +178,7 @@
             this.txtMaHS.Name = "txtMaHS";
             this.txtMaHS.Size = new System.Drawing.Size(100, 20);
             this.txtMaHS.TabIndex = 1;
+            this.txtMaHS.TextChanged += new System.EventHandler(this.txtMaHS_TextChanged);
             // 
             // label4
             // 
@@ -184,6 +188,7 @@
             this.label4.Size = new System.Drawing.Size(22, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "GT";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -342,50 +347,6 @@
             this.mnsIDU.TabIndex = 19;
             this.mnsIDU.Text = "menuStrip1";
             // 
-            // txtDT
-            // 
-            this.txtDT.Location = new System.Drawing.Point(539, 56);
-            this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(150, 20);
-            this.txtDT.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã HS*";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightBlue;
-            this.groupBox1.Controls.Add(this.txtDT);
-            this.groupBox1.Controls.Add(this.txtMaLp);
-            this.groupBox1.Controls.Add(this.cboTG);
-            this.groupBox1.Controls.Add(this.dtpNgaySinh);
-            this.groupBox1.Controls.Add(this.rdbNu);
-            this.groupBox1.Controls.Add(this.rdbNam);
-            this.groupBox1.Controls.Add(this.txtTenHS);
-            this.groupBox1.Controls.Add(this.txtDC);
-            this.groupBox1.Controls.Add(this.txtMaHS);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 51);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1019, 166);
-            this.groupBox1.TabIndex = 18;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin học sinh";
-            // 
             // btnThem
             // 
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
@@ -447,6 +408,50 @@
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
+            // txtDT
+            // 
+            this.txtDT.Location = new System.Drawing.Point(539, 56);
+            this.txtDT.Name = "txtDT";
+            this.txtDT.Size = new System.Drawing.Size(150, 20);
+            this.txtDT.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(21, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã HS*";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightBlue;
+            this.groupBox1.Controls.Add(this.txtDT);
+            this.groupBox1.Controls.Add(this.txtMaLp);
+            this.groupBox1.Controls.Add(this.cboTG);
+            this.groupBox1.Controls.Add(this.dtpNgaySinh);
+            this.groupBox1.Controls.Add(this.rdbNu);
+            this.groupBox1.Controls.Add(this.rdbNam);
+            this.groupBox1.Controls.Add(this.txtTenHS);
+            this.groupBox1.Controls.Add(this.txtDC);
+            this.groupBox1.Controls.Add(this.txtMaHS);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(3, 51);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1019, 166);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin học sinh";
             // 
             // ucHocSinh
             // 

@@ -258,6 +258,31 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             btnThayDoi.Enabled = true;
         }
 
+        private void txtMaHS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpNgaySinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbNu_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }
