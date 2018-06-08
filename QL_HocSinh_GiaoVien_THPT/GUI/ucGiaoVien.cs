@@ -24,7 +24,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             InitializeComponent();
         }
 
-        public void Mo_btn()
+        public void Mo_txt()
         {
             //các txt mở lại để nhập
             txtMaGV.ReadOnly = false;
@@ -75,7 +75,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             try
             {
-
                 dong = e.RowIndex;
                 txtMaGV.Text = dgvGiaoVien.Rows[dong].Cells[0].Value.ToString();
                 txtTen.Text = dgvGiaoVien.Rows[dong].Cells[1].Value.ToString();
@@ -98,34 +97,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 Khoa_btn();
             }
             catch { }
-        }
-        private void show_cboMonhoc()
-        {
-            SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-            conn.Open();
-            string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString() + "'";
-            DataTable dt = new DataTable();
-            SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
-            sqlDa.Fill(dt);
-            cboMamon.DataSource = dt;
-            cboMamon.DisplayMember = "TenMon";
-            cboMamon.ValueMember = "MaMon";
-        }
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            themmoi = true;
-
-            //Mở nút lưu 
-            txtMaGV.Enabled = true;
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
-            btnLuu.Enabled = true;
-
-            txtMaGV.Focus();
-            Mo_btn();
-            SetNull();
-            txtLuong.Text = "1000000";
-        }
+        }           
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -246,9 +218,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                         MessageBox.Show(ex.Message);
                     }
                 }
-                #endregion
-
-                
+                #endregion                
             }
         }
 
@@ -265,31 +235,8 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 LoadGV();
             }
         }
-        private DataTable Show_GV(string dieukien)
+        private void show_cboMonhoc()
         {
-            SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
-            conn.Open();
-            string strSQL = "select * from tblGiaovien where MaGV = '" + dieukien + "'";
-            DataTable dt = new DataTable();
-            SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
-            sqlDa.Fill(dt);
-            conn.Close();
-            return dt;
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            themmoi = false;
-            if (dong < 0)
-            {
-                MessageBox.Show("Chưa chọn giáo viên để sửa!");
-                return;
-            }
-            Mo_btn();
-            btnThem.Enabled = false;
-            btnXoa.Enabled = false;
-            btnLuu.Enabled = true;
-            //hienthi ds Ma Mon
             SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
             conn.Open();
             string strSQL = "select * from tblMonhoc";
@@ -300,6 +247,36 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             cboMamon.DisplayMember = "TenMon";
             cboMamon.ValueMember = "MaMon";
             conn.Close();
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            themmoi = true;
+            //Mở nút lưu 
+            txtMaGV.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+            txtMaGV.Focus();
+            Mo_txt();
+            SetNull();
+            txtLuong.Text = "1000000";
+            //hienthi ds Ma Mon
+            show_cboMonhoc();
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            themmoi = false;
+            if (dong < 0)
+            {
+                MessageBox.Show("Chưa chọn giáo viên để sửa!");
+                return;
+            }
+            Mo_txt();
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+            //hienthi ds Ma Mon
+            show_cboMonhoc();            
         }
 
         // Tìm Kiếm
@@ -323,7 +300,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
                     conn.Open();
                     string strSQL = "SELECT MaGV, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien WHERE TenGV like N'%" + txtTimKiem.Text + "%'";
-
                     DataTable dt = new DataTable();
                     SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
                     sqlDa.Fill(dt);
@@ -342,14 +318,10 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 MessageBox.Show(ex.Message);
 
             }
-
-
-
         }
 
         private void tlsRefresh_Click(object sender, EventArgs e)
         {
-            //Khoa_btn();
             LoadGV();
         }
 
