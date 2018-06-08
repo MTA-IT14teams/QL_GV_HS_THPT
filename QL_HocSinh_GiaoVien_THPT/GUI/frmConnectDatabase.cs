@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 
 namespace QL_HocSinh_GiaoVien_THPT.GUI
@@ -78,9 +79,17 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
 
                 if (DTO.Connect.myconnect.State == ConnectionState.Open)
                 {
-                    MessageBox.Show("Bạn đã kết nối thành công đến cơ sở dữ liệu " + txtTenCSDL.Text);
-                    this.Close();
-                    this.Dispose();
+                    using (StreamWriter write = new StreamWriter("config"))
+                    {
+                        write.WriteLine(DTO.ConnectString.ServerName);
+                        write.WriteLine(DTO.ConnectString.DatabaseName);
+                        write.WriteLine(DTO.ConnectString.UserName);
+                        write.WriteLine(DTO.ConnectString.Password);
+                    }
+
+                    GUI.frmLogin lg = new GUI.frmLogin();
+                    this.Hide();
+                    lg.ShowDialog();
                 }
                 else
                 {

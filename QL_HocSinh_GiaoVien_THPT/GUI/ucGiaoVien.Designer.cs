@@ -208,7 +208,7 @@
             this.mnsIDU.Location = new System.Drawing.Point(18, 215);
             this.mnsIDU.Name = "mnsIDU";
             this.mnsIDU.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnsIDU.Size = new System.Drawing.Size(379, 55);
+            this.mnsIDU.Size = new System.Drawing.Size(471, 55);
             this.mnsIDU.TabIndex = 6;
             this.mnsIDU.Text = "menuStrip1";
             // 
@@ -259,6 +259,10 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+<<<<<<< HEAD
+=======
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+>>>>>>> bce77590185e391f03c427174c8049315690d66e
             // 
             // tlsRefresh
             // 
