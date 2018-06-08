@@ -79,5 +79,13 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
 
         }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đóng chương trình không?", "Đóng chương trình", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

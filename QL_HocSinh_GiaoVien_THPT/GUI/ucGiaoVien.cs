@@ -11,8 +11,8 @@ using System.Data.SqlClient;
 using System.Configuration;
 
 namespace QL_HocSinh_GiaoVien_THPT.GUI
-{   
-     
+{
+
     public partial class ucGiaoVien : UserControl
     {
         bool themmoi = false;
@@ -28,7 +28,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             //các txt mở lại để nhập
             txtMaGV.ReadOnly = false;
-            txtTen.ReadOnly = false ;
+            txtTen.ReadOnly = false;
             txtDiaChi.ReadOnly = false;
             txtSDT.ReadOnly = false;
             txtLuong.ReadOnly = false;
@@ -85,7 +85,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 txtSDT.Text = dgvGiaoVien.Rows[dong].Cells[4].Value.ToString();
                 txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[5].Value.ToString();
                 txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
-                
+
                 SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
                 conn.Open();
                 string strSQL = "select * from tblMonhoc where MaMon = '" + dgvGiaoVien.Rows[dong].Cells[7].Value.ToString() + "'";
@@ -113,23 +113,23 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            themmoi = true;            
+            themmoi = true;
 
             //Mở nút lưu 
             txtMaGV.Enabled = true;
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
             btnLuu.Enabled = true;
-            
+
             txtMaGV.Focus();
             Mo_btn();
             SetNull();
-            txtLuong.Text = "1000000";    
+            txtLuong.Text = "1000000";
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if(txtMaGV.Text == ""|| txtTen.Text == "")
+            if (txtMaGV.Text == "" || txtTen.Text == "")
             {
                 MessageBox.Show("Xin mời nhập đầy đủ thông tin");
                 Khoa_btn();
@@ -138,39 +138,46 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             else
             {
                 //Them GV
-                #region 
-                if (themmoi==true)
+                #region
+                if (themmoi == true)
                 {
                     try
-                      {
+                    {
 
                         SqlConnection connT = new SqlConnection(DTO.ConnectString.StringConnect);
                         connT.Open();
                         SqlCommand cmd = new SqlCommand("themGV1", connT);
                         cmd.CommandType = CommandType.StoredProcedure;
-                        SqlParameter p = new SqlParameter("@MaGV",txtMaGV.Text);
+                        SqlParameter p = new SqlParameter("@MaGV", txtMaGV.Text);
                         cmd.Parameters.Add(p);
                         p = new SqlParameter("@TenGV", txtTen.Text);
                         cmd.Parameters.Add(p);
-                        if (rdbNam.Checked)                 
+
+                        if (rdbNam.Checked)
                             p = new SqlParameter("@GT", "Nam");
-                        else 
+                        else
                             p = new SqlParameter("@GT", "Nữ");
                         cmd.Parameters.Add(p);
-                        p = new SqlParameter("@NgaySinh",dtpNgaySinh.Value.Year.ToString() + "-" +
+
+                        p = new SqlParameter("@NgaySinh", dtpNgaySinh.Value.Year.ToString() + "-" +
                         dtpNgaySinh.Value.Month.ToString() + "-" + dtpNgaySinh.Value.Day.ToString());
                         cmd.Parameters.Add(p);
+
                         p = new SqlParameter("@SDT", txtSDT.Text);
                         cmd.Parameters.Add(p);
+
                         p = new SqlParameter("@DiaChi", txtDiaChi.Text);
                         cmd.Parameters.Add(p);
+
                         p = new SqlParameter("@Luong", txtLuong.Text);
-                        cmd.Parameters.Add(p);         
+                        cmd.Parameters.Add(p);
+
                         p = new SqlParameter("@MaMon", cboMamon.SelectedValue.ToString());
                         cmd.Parameters.Add(p);
+
                         cmd.ExecuteNonQuery();
                         //Hiển thị lại thông tin sau khi thêm và thông báo
-                        LoadGV();                        
+                        LoadGV();
                         MessageBox.Show("Thêm mới thành công");
                         //
                         txtMaGV.Enabled = false;
@@ -179,9 +186,9 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                         btnXoa.Enabled = true;
                         SetNull();
                         connT.Close();
-                        }
+                    }
                     catch (Exception ex)
-                        {
+                    {
                         MessageBox.Show(ex.Message);
                     }
                 }
@@ -196,7 +203,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                         SqlConnection connX = new SqlConnection(DTO.ConnectString.StringConnect);
                         connX.Open();
                         //MessageBox.Show("ok");
-                        
+
                         SqlCommand cmd2 = new SqlCommand("suaGV1", connX);
                         cmd2.CommandType = CommandType.StoredProcedure;
                         SqlParameter p = new SqlParameter("@MaGV", txtMaGV.Text);
@@ -219,28 +226,29 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                         cmd2.Parameters.Add(p);
                         p = new SqlParameter("@MaMon", cboMamon.SelectedValue.ToString());
                         cmd2.Parameters.Add(p);
-                        
+
                         cmd2.ExecuteNonQuery();
-                         
+
                         //Hiển thị lại thông tin sau khi thêm và thông báo
                         //Ketnoi();
-                        
+
                         MessageBox.Show("Thay đổi thông tin giáo viên thành công");
+                        btnThem.Enabled = true;
+                        btnLuu.Enabled = false;
+                        btnXoa.Enabled = true;
+                        SetNull();
+                        Khoa_btn();/*không cho thao tác*/
+                        LoadGV();
 
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
                 }
                 #endregion
 
-                btnThem.Enabled = true;
-                btnLuu.Enabled = false;
-                btnXoa.Enabled = true;
-                SetNull();
-                Khoa_btn();/*không cho thao tác*/
-                LoadGV();
+                
             }
         }
 
@@ -305,7 +313,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     conn.Open();
                     string strSQL = "SELECT MaGV, TenGV, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien WHERE MaGV like N'%" + txtTimKiem.Text + "%'";
                     DataTable dt = new DataTable();
-                    SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL,conn);
+                    SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
                     sqlDa.Fill(dt);
                     dgvGiaoVien.DataSource = dt;
                     conn.Close();
@@ -315,7 +323,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
                     conn.Open();
                     string strSQL = "SELECT MaGV, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien WHERE TenGV like N'%" + txtTimKiem.Text + "%'";
-                    
+
                     DataTable dt = new DataTable();
                     SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
                     sqlDa.Fill(dt);
@@ -327,16 +335,16 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     MessageBox.Show(" Mời bạn chọn lại!!!!");
                     return;
                 }
-            
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
 
             }
 
-           
-                
+
+
         }
 
         private void tlsRefresh_Click(object sender, EventArgs e)
