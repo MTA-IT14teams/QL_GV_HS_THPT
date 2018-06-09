@@ -51,6 +51,8 @@
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.btnXuatFile = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -207,7 +209,7 @@
             this.ucTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ucTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("ucTimKiem.Image")));
             this.ucTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ucTimKiem.Location = new System.Drawing.Point(850, 107);
+            this.ucTimKiem.Location = new System.Drawing.Point(859, 107);
             this.ucTimKiem.Name = "ucTimKiem";
             this.ucTimKiem.Size = new System.Drawing.Size(88, 34);
             this.ucTimKiem.TabIndex = 14;
@@ -288,24 +290,52 @@
             this.Quyen});
             this.dataGridView1.Location = new System.Drawing.Point(328, 153);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(716, 287);
+            this.dataGridView1.Size = new System.Drawing.Size(725, 287);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(944, 115);
+            this.txtTimKiem.Location = new System.Drawing.Point(953, 115);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(100, 20);
             this.txtTimKiem.TabIndex = 18;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            // 
+            // btnXuatFile
+            // 
+            this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
+            this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatFile.Location = new System.Drawing.Point(687, 101);
+            this.btnXuatFile.Name = "btnXuatFile";
+            this.btnXuatFile.Size = new System.Drawing.Size(82, 46);
+            this.btnXuatFile.TabIndex = 108;
+            this.btnXuatFile.Text = "Xuất File";
+            this.btnXuatFile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXuatFile.UseVisualStyleBackColor = true;
+            this.btnXuatFile.Click += new System.EventHandler(this.btnXuatFile_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(775, 101);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(78, 46);
+            this.btnThoat.TabIndex = 109;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // ucTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ucTimKiem);
@@ -354,5 +384,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quyen;
         private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnXuatFile;
     }
 }

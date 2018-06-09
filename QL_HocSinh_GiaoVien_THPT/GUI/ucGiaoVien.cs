@@ -325,6 +325,28 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
             LoadGV();
         }
 
+<<<<<<< HEAD
+        private void rdbNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdTKMa_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdTKTen_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+=======
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -347,5 +369,6 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                 //}
             }
         }
+>>>>>>> bce77590185e391f03c427174c8049315690d66e
     }
 }
