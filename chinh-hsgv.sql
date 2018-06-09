@@ -44,3 +44,17 @@ AS
 UPDATE tblGiaovien
 SET TenGV = @TenGV,GT = @GT,NgaySinh =@NgaySinh, SDT = @SDT,DiaChi = @DiaChi, Luong = @Luong, MaMon = @MaMon
 WHERE MaGV = @MaGV
+go 
+
+USE [QL_GV_HS_THPT]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create PROC [dbo].[XOAGIAOVIEN](@MaGV CHAR(10))
+AS
+BEGIN
+DELETE tblGiaovien
+WHERE MaGV = @MaGV
+END
