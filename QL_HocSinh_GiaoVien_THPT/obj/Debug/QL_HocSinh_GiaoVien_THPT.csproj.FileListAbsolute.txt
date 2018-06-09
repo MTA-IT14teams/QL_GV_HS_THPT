@@ -219,3 +219,20 @@ E:\Nam_3_Kỳ2\Thuctapnhom\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_H
 C:\Users\vuman\Desktop\QL_GV_HS_THPT-bce77590185e391f03c427174c8049315690d66e\QL_GV_HS_THPT-bce77590185e391f03c427174c8049315690d66e\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
 C:\Users\vuman\Desktop\QL_GV_HS_THPT-bce77590185e391f03c427174c8049315690d66e\QL_GV_HS_THPT-bce77590185e391f03c427174c8049315690d66e\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
 C:\Users\vuman\Desktop\QL_GV_HS_THPT-bce77590185e391f03c427174c8049315690d66e\QL_GV_HS_THPT-bce77590185e391f03c427174c8049315690d66e\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe.config
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.exe
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.pdb
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csprojResolveAssemblyReference.cache
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmConnectDatabase.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmLogin.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.frmMain.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiangDay.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucGiaoVien.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucHocSinh.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucTaiKhoan.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucThoiKhoaBieu.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.GUI.ucView.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.Properties.Resources.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\obj\Debug\QL_HocSinh_GiaoVien_THPT.csproj.GenerateResource.Cache
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.exe
+E:\Nam_3_Kỳ2\Thuctapnhom\Project de day len GitHub\QL_GV_HS_THPT\QL_HocSinh_GiaoVien_THPT\bin\Debug\QL_HocSinh_GiaoVien_THPT.pdb

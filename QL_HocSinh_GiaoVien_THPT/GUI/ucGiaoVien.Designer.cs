@@ -83,6 +83,7 @@
             this.rdTKTen = new System.Windows.Forms.RadioButton();
             this.rdTKMa = new System.Windows.Forms.RadioButton();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnXuatExcel = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
             this.mnsIDU.SuspendLayout();
             this.grbThongTinGiaoVien.SuspendLayout();
@@ -204,11 +205,12 @@
             this.btnLuu,
             this.btnXoa,
             this.tlsRefresh,
-            this.btnThoat});
+            this.btnThoat,
+            this.btnXuatExcel});
             this.mnsIDU.Location = new System.Drawing.Point(18, 215);
             this.mnsIDU.Name = "mnsIDU";
             this.mnsIDU.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnsIDU.Size = new System.Drawing.Size(471, 55);
+            this.mnsIDU.Size = new System.Drawing.Size(543, 56);
             this.mnsIDU.TabIndex = 6;
             this.mnsIDU.Text = "menuStrip1";
             // 
@@ -218,7 +220,7 @@
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnThem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(50, 51);
+            this.btnThem.Size = new System.Drawing.Size(50, 52);
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -231,7 +233,7 @@
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(117, 51);
+            this.btnSua.Size = new System.Drawing.Size(117, 52);
             this.btnSua.Text = "Thay đổi thông tin";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -243,7 +245,7 @@
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLuu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(44, 51);
+            this.btnLuu.Size = new System.Drawing.Size(44, 52);
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -255,7 +257,7 @@
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnXoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(44, 51);
+            this.btnXoa.Size = new System.Drawing.Size(44, 52);
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -267,7 +269,7 @@
             this.tlsRefresh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tlsRefresh.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tlsRefresh.Name = "tlsRefresh";
-            this.tlsRefresh.Size = new System.Drawing.Size(66, 51);
+            this.tlsRefresh.Size = new System.Drawing.Size(66, 52);
             this.tlsRefresh.Text = "Làm mới";
             this.tlsRefresh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tlsRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -279,7 +281,7 @@
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnThoat.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(50, 51);
+            this.btnThoat.Size = new System.Drawing.Size(50, 52);
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -542,6 +544,18 @@
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
+            // btnXuatExcel
+            // 
+            this.btnXuatExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatExcel.Image")));
+            this.btnXuatExcel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnXuatExcel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnXuatExcel.Name = "btnXuatExcel";
+            this.btnXuatExcel.Size = new System.Drawing.Size(72, 52);
+            this.btnXuatExcel.Text = "Xuất Excel";
+            this.btnXuatExcel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnXuatExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
+            // 
             // ucGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,5 +628,6 @@
         private System.Windows.Forms.RadioButton rdTKMa;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem tlsRefresh;
+        private System.Windows.Forms.ToolStripMenuItem btnXuatExcel;
     }
 }
