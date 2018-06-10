@@ -409,5 +409,45 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             ExportToExcel(dgvGiaoVien);
         }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rdTKMa.Checked == true)
+                {
+                    SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+                    conn.Open();
+                    string strSQL = "SELECT MaGV, TenGV, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien WHERE MaGV like N'%" + txtTimKiem.Text + "%'";
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+                    sqlDa.Fill(dt);
+                    dgvGiaoVien.DataSource = dt;
+                    conn.Close();
+                }
+                else if (rdTKTen.Checked == true)
+                {
+                    SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
+                    conn.Open();
+                    string strSQL = "SELECT MaGV, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien WHERE TenGV like N'%" + txtTimKiem.Text + "%'";
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+                    sqlDa.Fill(dt);
+                    dgvGiaoVien.DataSource = dt;
+                    conn.Close();
+                }
+                else
+                {
+                    //MessageBox.Show(" Mời bạn chọn lại!!!!");
+                    return;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
     }
 }
