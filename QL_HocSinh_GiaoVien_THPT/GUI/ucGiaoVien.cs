@@ -284,6 +284,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
         {
             try
             {
+                // Tìm kiếm theo mã
                 if (rdTKMa.Checked == true)
                 {
                     SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
@@ -295,6 +296,7 @@ namespace QL_HocSinh_GiaoVien_THPT.GUI
                     dgvGiaoVien.DataSource = dt;
                     conn.Close();
                 }
+                // Tìm kiếm theo tên
                 else if (rdTKTen.Checked == true)
                 {
                     SqlConnection conn = new SqlConnection(DTO.ConnectString.StringConnect);
